@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center"> 
     <img src="![image](https://github.com/aksinghrajpoot/aksinghrajpoot/blob/main/cover.png)" alt="A K Singh Rajpoot's Github Profile" />
 </p>
 
