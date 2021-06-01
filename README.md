@@ -1,4 +1,4 @@
-<div w3-include-html="https://raw.githubusercontent.com/aksinghrajpoot/aksinghrajpoot/main/top.html"></div>
+![](./top.svg)
 
 <p align="center"> 
     <img src="https://github.com/aksinghrajpoot/aksinghrajpoot/blob/main/cover-main.png" alt="A K Singh Rajpoot's Github Profile" />
