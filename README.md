@@ -41,7 +41,8 @@ patterns.\
 <p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=aksinghrajpoot&show_icons=true&theme=gotham" alt="Ayushi Rawat | Stats" />
 
 </details>
-![Visitor Count](https://profile-counter.glitch.me/{aksinghrajpoot}/count.svg)
+
+ ![Visitor Count](https://profile-counter.glitch.me/{aksinghrajpoot}/count.svg)
 
 ### 📫 &nbsp; How to reach me:
 
