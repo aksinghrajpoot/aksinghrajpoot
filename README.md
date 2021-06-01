@@ -1,16 +1,4 @@
-<div align="center">
-	<br>
-	<a href="https://raw.githubusercontent.com/sindresorhus/css-in-readme-like-wat/main/readme.md">
-		<img src="header.svg" width="800" height="400" alt="Click to see the source">
-	</a>
-	<br>
-</div><div align="center">
-	<br>
-	<a href="https://raw.githubusercontent.com/sindresorhus/css-in-readme-like-wat/main/readme.md">
-		<img src="header.svg" width="800" height="400" alt="Click to see the source">
-	</a>
-	<br>
-</div>
+<h1> hello </h1>
 
 <p align="center"> 
     <img src="https://github.com/aksinghrajpoot/aksinghrajpoot/blob/main/cover-main.png" alt="A K Singh Rajpoot's Github Profile" />
