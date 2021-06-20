@@ -8,7 +8,19 @@
 ![profile count](https://komarev.com/ghpvc/?username=aksinghrajpoot&color=red)&nbsp;
 [![GitHub aksinghrajpoot](https://img.shields.io/github/followers/aksinghrajpoot?label=follow&style=social)](https://github.com/aksinghrajpoot)&nbsp;
 ![build: passing](https://img.shields.io/badge/build-passing-success)
-### 👨🏻‍💻 &nbsp;About Me
+
+<p align="center">
+  <samp>
+    Hi, I'm A K! 👋 <br>
+    🔥 19 Year's Old Software Engineer grinding hard to make something cool  <br>
+    :sparkles: Favorite Tech: JavaScript, React, Typescript, Python ... <br>
+    :notebook: I’m currently learning React and Djnago... 😭  <br>
+    :email:	imaksinghrajpoot@gmail.com <br>
+    :art: Portfolio: https://aksinghrajpoot.github.io <br>
+    :briefcase: LinkedIn: https://linkedin.com/in/aksinghrajpoot <br>
+                Twitter: https://twitter.com/aksinghrajpoot?lang=en
+  </samp>
+</p>
 
 💡 &nbsp; I'm a software engineer and researcher at XNetKing, currently working in the field of adaptive sensing and multimodal detection of human behavioral
 patterns.\
