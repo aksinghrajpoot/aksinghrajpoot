@@ -12,7 +12,7 @@
 <p align="center">
   <samp>
     Hi, I'm A K! 👋 <br>
-    🔥 19 Year's Old Software Engineer grinding hard to make something cool  <br>
+    🔥 19 Year's Old Software Developer and researcher at XNetKing  <br>
     :sparkles: Favorite Tech: JavaScript, React, Typescript, Python ... <br>
     :notebook: I’m currently learning React and Djnago... 😭  <br>
     :email:	imaksinghrajpoot@gmail.com <br>
@@ -21,15 +21,6 @@
                 Twitter: https://twitter.com/aksinghrajpoot?lang=en
   </samp>
 </p>
-
-💡 &nbsp; I'm a software engineer and researcher at XNetKing, currently working in the field of adaptive sensing and multimodal detection of human behavioral
-patterns.\
-🎓 &nbsp;I'm currently studying Computer Science and Engineering at Visvesvaraya National Institute of Technology, Nagpur (2017-2021).\
-🌱 &nbsp;I'm on track for learning more about Artificial Intelligence, Homomorphic Encryption, and Computer Vision.\
-✍️ &nbsp;In my free time, I play guitar, football and pursue writing as my hobbies.\
-💬 &nbsp;Feel free to reach out to me for general consulting, or discussions on the aforementioned topics!\
-✉️ &nbsp;You can email me at mytechaksingh@gmail.com. I'll try to respond as soon as possible!\
-📄 &nbsp;You can check my [Resume](#) for more details about work experience.
 
 
 ### 🛠 &nbsp;Tech Stack
