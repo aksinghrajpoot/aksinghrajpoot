@@ -2,13 +2,6 @@
     <img src="https://github.com/aksinghrajpoot/aksinghrajpoot/blob/main/cover-main.png" alt="A K Singh Rajpoot's Github Profile" />
 </p>
 
-### <img alt="handwavegif" src="https://user-images.githubusercontent.com/39513876/112366216-8cfe7400-8cfe-11eb-8116-7d3dbae20e97.gif" width='40' align="left"/> Hello there !
-![version :25.03.2021](https://img.shields.io/badge/version-25.03.2021-informational) &nbsp;
-![licence](https://img.shields.io/crates/l/rustc-serialize/0.3.24) &nbsp;
-![profile count](https://komarev.com/ghpvc/?username=aksinghrajpoot&color=red)&nbsp;
-[![GitHub aksinghrajpoot](https://img.shields.io/github/followers/aksinghrajpoot?label=follow&style=social)](https://github.com/aksinghrajpoot)&nbsp;
-![build: passing](https://img.shields.io/badge/build-passing-success)
-
 <p align="center">
   <samp>
     Hi, I'm A K! 👋 <br>
@@ -21,7 +14,11 @@
                 Twitter: https://twitter.com/aksinghrajpoot?lang=en
   </samp>
 </p>
-
+![version :25.03.2021](https://img.shields.io/badge/version-25.03.2021-informational) &nbsp;
+![licence](https://img.shields.io/crates/l/rustc-serialize/0.3.24) &nbsp;
+![profile count](https://komarev.com/ghpvc/?username=aksinghrajpoot&color=red)&nbsp;
+[![GitHub aksinghrajpoot](https://img.shields.io/github/followers/aksinghrajpoot?label=follow&style=social)](https://github.com/aksinghrajpoot)&nbsp;
+![build: passing](https://img.shields.io/badge/build-passing-success)
 
 ### 🛠 &nbsp;Tech Stack
 
