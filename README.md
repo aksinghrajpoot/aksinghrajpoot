@@ -14,10 +14,11 @@
                 Twitter: https://twitter.com/aksinghrajpoot?lang=en
   </samp>
 </p>
+
 ![version :25.03.2021](https://img.shields.io/badge/version-25.03.2021-informational) &nbsp;
 ![licence](https://img.shields.io/crates/l/rustc-serialize/0.3.24) &nbsp;
 ![profile count](https://komarev.com/ghpvc/?username=aksinghrajpoot&color=red)&nbsp;
-[![GitHub aksinghrajpoot](https://img.shields.io/github/followers/aksinghrajpoot?label=follow&style=social)](https://github.com/aksinghrajpoot)&nbsp;
+![GitHub aksinghrajpoot](https://img.shields.io/github/followers/aksinghrajpoot?label=follow&style=social)](https://github.com/aksinghrajpoot)&nbsp;
 ![build: passing](https://img.shields.io/badge/build-passing-success)
 
 ### 🛠 &nbsp;Tech Stack
