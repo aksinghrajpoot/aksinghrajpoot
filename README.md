@@ -1,5 +1,5 @@
 <p align="center"> 
-    <img src="https://github.com/aksinghrajpoot/aksinghrajpoot/blob/main/cover-main.png" alt="A K Singh Rajpoot's Github Profile" />
+    <img src="https://github.com/aksinghrajpoot/aksinghrajpoot/tree/master/public/static/cover-main.png" alt="A K Singh Rajpoot's Github Profile" />
 </p>
 
 <p align="center">
