@@ -1,0 +1,33 @@
+.nav {
+  @apply hidden md:flex flex-row space-x-6 items-center justify-between;
+}
+.navItems {
+  @apply text-light flex flex-row space-x-5;
+}
+.navCta {
+  @apply border border-primary rounded-md py-1.5 px-5 text-primary;
+}
+
+
+
+.bar {
+  position: relative;
+  width: 40px;
+  display: block;
+  height: 40px;
+  margin-left: 70px;
+  top:10px;
+}
+.bar span {
+  @apply h-[2px] bg-primary block absolute right-0;
+}
+.bar span:nth-child(1) {
+  @apply w-10 top-0;
+}
+.bar span:nth-child(2) {
+  @apply w-8 mt-2;
+}
+.bar span:nth-child(3) {
+  @apply w-6 mt-4;
+}
+
