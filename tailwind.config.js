@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       fontFamily: {
         fira: ['"Fira Mono", monospace'],
+        poppins: ["'Poppins', sans-serif"],
       },
       colors: {
         primary: "#64ffda",

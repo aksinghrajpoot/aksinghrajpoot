@@ -1,0 +1,17 @@
+.profileImg::before{
+    content: '';
+    position: absolute; width: 250px;
+    height: 250px;
+    top: 20px;
+    left: 20px;
+    border-radius: 4px;
+    border: 2px solid var(--primary);
+    transform: translate3d(4px 0 3px);
+    transition: linear .1s;
+}
+.profileImg:hover{
+    filter: grayscale(0);
+}
+.profileImg:hover::before{
+    transform: translateX(-5px) translateY(-5px);
+}
