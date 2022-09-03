@@ -1,5 +1,5 @@
-import Image from "next/Image";
-import style from "./About.module.css"
+import Image from "next/image";
+import style from "./About.module.css";
 
 function About() {
   return (
