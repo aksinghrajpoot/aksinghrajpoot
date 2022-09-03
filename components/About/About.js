@@ -8,7 +8,7 @@ function About() {
         <div className="container">
           <h2 className="numberedHeading">About Me</h2>
           <div className="grid grid-cols-12">
-            <div className="body font-poppins col-span-7">
+            <div className="body font-poppins col-span-12 md:col-span-7">
               <p className="font-poppins mt-6">
                 Hello! My name is Ashok and I am a software developer located in
                 India, I have a serious passion for web devlopment, designs and
@@ -35,7 +35,7 @@ function About() {
                 </ul>
               </div>
             </div>
-            <div className="col-span-5 mx-auto p-0">
+            <div className="col-span-12 py-16 md:py-0 md:col-span-5 mx-auto p-0">
               <div
                 className={`wrapper bg-primary rounded-md relative w-[250px] h-[250px] ${style.profileImg}`}
               >
