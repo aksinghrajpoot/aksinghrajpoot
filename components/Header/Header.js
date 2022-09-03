@@ -7,7 +7,7 @@ function Header() {
       <div className="px-4 md:px-[60px] py-5">
         <div className="flex justify-between items-center">
           <div>
-            <Image width="40" height="40" src="/static/logo.svg" />
+            <Image width="40" height="40" alt='Logo' src="/static/logo.svg" />
           </div>
           <div className="flex items-center">
             <div className={`${styles.nav} hidden md:flex`}>
