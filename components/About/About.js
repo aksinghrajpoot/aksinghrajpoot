@@ -39,6 +39,7 @@ function About() {
                   width={250}
                   height={250}
                   layout="responsive"
+                  alt="A K Singh"
                 />
               </div>
             </div>
