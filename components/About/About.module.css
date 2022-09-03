@@ -15,3 +15,12 @@
 .profileImg:hover::before{
     transform: translateX(-5px) translateY(-5px);
 }
+
+.skillsList li:before{
+    content: "▹";
+    left: 10px;
+    padding-right:10px;
+    color: var(--primary);
+    font-size: 1rem;
+    line-height: 12px;
+}

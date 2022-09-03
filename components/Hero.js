@@ -10,13 +10,16 @@ export default function Hero() {
           I build creative application.
         </h2>
         <p className="py-6 lg:w-[500px] text-lg">
-          I&lsquo;m a software engineer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I&lsquo;m focused on
-          building accessible, human-centered products at Upstatement.
+          I&lsquo;m a software engineer specializing in building (and
+          occasionally designing) exceptional digital experiences. Currently,
+          I&lsquo;m focused on building accessible products and applications as
+          freelancer.
         </p>
-        <button className="py-3 px-7  font-fira border border-primary rounded-md text-primary mt-5">
-          Let&lsquo;s connect
-        </button>
+        <a href="https://linkedin.com/in/aksinghrajpoot">
+          <button className="py-3 px-7  font-fira border border-primary rounded-md text-primary mt-5">
+            Let&lsquo;s connect
+          </button>
+        </a>
       </div>
     </section>
   );
