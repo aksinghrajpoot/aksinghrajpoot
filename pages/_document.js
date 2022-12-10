@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta name="theme-color" content="#0A192F" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link
           href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Poppins:ital,wght@0,400;0,500;0,600;1,500&display=swap"
           rel="stylesheet"
