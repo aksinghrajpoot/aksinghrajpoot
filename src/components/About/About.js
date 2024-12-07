@@ -32,6 +32,7 @@ function About() {
                   <li>Express.js</li>
                   <li>Wordpress</li>
                   <li>Python</li>
+                  <li>Office 365</li>
                 </ul>
               </div>
             </div>
