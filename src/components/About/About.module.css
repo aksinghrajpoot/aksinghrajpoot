@@ -10,10 +10,11 @@
     transition: linear .1s;
 }
 .profileImg:hover{
-    filter: grayscale(0);
+    filter: grayscale(0);  
 }
 .profileImg:hover::before{
     transform: translateX(-5px) translateY(-5px);
+    border-color: #bf5744;
 }
 
 .skillsList li:before{

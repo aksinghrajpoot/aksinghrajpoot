@@ -38,10 +38,10 @@ export default function Aboutcomponent() {
             </div>
             <div className="col-span-12 py-16 md:py-0 md:col-span-5 mx-auto p-0">
               <div
-                className={`wrapper bg-primary rounded-md relative w-[250px] h-[250px] ${style.profileImg}`}
+                className={`wrapper bg-primary rounded-md relative w-[250px] h-[250px] transition-all ease-in-out duration-700 ${style.profileImg}`}
               >
                 <Image
-                  className="filter grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal rounded-md h-full"
+                  className="transition-all ease-in-out duration-500 filter grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal rounded-md h-full"
                   src="/static/profile.png"
                   width={250}
                   height={250}
