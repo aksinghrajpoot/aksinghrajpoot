@@ -1,13 +1,14 @@
-export const metadata = {
-  title: 'About Us',
-  description: 'Learn more about A K Singh Rajpoot on our About Us page.',
-};
+import Head from "next/head";
 
-export default function AboutPage() {
+export const metadata = {
+  title: 'About',
+}
+ 
+export default function About() {
   return (
     <>
       <div>
-        <h1>About Us</h1>{" "}
+        <h1>About Us</h1>
         <p>Welcome to the About page of our awesome website!</p>{" "}
       </div>
     </>

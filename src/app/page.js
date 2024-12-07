@@ -4,9 +4,9 @@ import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 
 export const metadata = {
-  title: '',
-  description: "Welcome to A K Singh Rajpoot's personal website!",
-};
+  title:"A K Singh Rajpoot"
+}
+
 export default function Home() {
   return (
     <>
