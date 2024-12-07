@@ -1,7 +1,7 @@
 // app/layout.js
 import Head from "next/head";
 import "@/global.css";
-import { defaultMetadata } from "../metaConfig";
+import { defaultMetadata } from '@/metaConfig';
 
 
 // `generateMetadata` dynamically sets metadata based on the current page
