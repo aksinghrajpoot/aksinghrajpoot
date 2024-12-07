@@ -22,7 +22,7 @@ export default function Custom404() {
 
           {/* Additional Message */}
           <p className="mt-2 text-lg font-light text-light animate-zoomIn">
-            The page you're looking for does not exist. Let’s get you back on track.
+            The page you&apos;e looking for does not exist. Let&apos;s get you back on track.
           </p>
 
           {/* Call-to-Action Button */}
