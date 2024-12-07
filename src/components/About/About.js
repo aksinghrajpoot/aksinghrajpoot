@@ -1,7 +1,7 @@
 import Image from "next/image";
 import style from "./About.module.css";
 
-function About() {
+export default function Aboutcomponent() {
   return (
     <>
       <section className="about_me" id="about-me">
@@ -45,7 +45,6 @@ function About() {
                   src="/static/profile.png"
                   width={250}
                   height={250}
-                  layout="responsive"
                   alt="A K Singh"
                 />
               </div>
@@ -57,4 +56,4 @@ function About() {
   );
 }
 
-export default About;
+
