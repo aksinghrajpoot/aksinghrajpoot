@@ -1,0 +1,23 @@
+
+.numberedHeading::before {
+    position: relative;
+    bottom: 4px;
+    counter-increment: section 1;
+    content: "09.";
+    margin-right: 10px;
+    color: var(--primary);
+    font-size: 18px;
+    font-family: var(--mono);
+    font-weight: 400;
+  
+  }
+  .numberedHeading::after {
+    content: "";
+    width: 150px;
+    height: 1px;
+    background-color: #233554;
+    position: relative;
+    display: inline-block;
+    bottom: 5px;
+    left: 15px;
+  }

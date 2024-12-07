@@ -1,0 +1,21 @@
+.svgx i svg {
+    width: 20px;
+    height: 20px;
+  }
+  @media only screen and (min-width:512px){
+    .svgx i{
+      padding: 10px;
+      transition: linear .2s;
+      cursor: pointer;
+    }
+  .svgx i:hover,.svgx i:focus {
+    transform: translateY(-5px);
+    transition: linear .2s;
+    color:var(--primary)
+  }
+  }
+  
+  .icons {
+    left: 60px;
+  }
+  

@@ -6,10 +6,24 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        lg:"10rem",
+        md:"5rem",
+      },
+    },
     extend: {
+      fontFamily: {
+        fira: ['"Fira Mono", monospace'],
+        poppins: ["'Poppins', sans-serif"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#64ffda",
+        neon: "#0A192F",
+        light: "#ccd6f6",
+        elight: "#8892B0",
       },
     },
   },

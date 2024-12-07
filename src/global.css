@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-neon text-elight;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+section {
+  @apply py-20;
+}
+::selection {
+  color: white;
+  background-color: rgba(0, 255, 255, 0.397);
+}
+:root {
+  --primary: #64ffda;
+  --mono: "Fira Mono", monospace;
+}
+.numberedHeading {
+  @apply text-3xl text-light font-bold relative w-full;
+}
+.numberedHeading::before {
+  position: relative;
+  bottom: 4px;
+  counter-increment: section 1;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  color: var(--primary);
+  font-size: 18px;
+  font-family: var(--mono);
+  font-weight: 400;
+
+}
+.numberedHeading::after {
+  content: "";
+  width: 150px;
+  height: 1px;
+  background-color: #233554;
+  position: relative;
+  display: inline-block;
+  bottom: 5px;
+  left: 15px;
+}
+P{
+  @apply mb-3
+}
