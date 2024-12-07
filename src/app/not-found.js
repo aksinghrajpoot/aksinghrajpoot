@@ -17,7 +17,7 @@ export default function Custom404() {
 
           {/* Description with zoom effect */}
           <p className="text-2xl font-light text-light animate-zoomIn">
-            Whoops! Looks like you're lost in cyberspace.
+            Whoops! Looks like you&apos;re lost in cyberspace.
           </p>
 
           {/* Additional Message */}
@@ -34,8 +34,6 @@ export default function Custom404() {
           </a>
         </div>
       </div>
-
-
     
     </>
   );
