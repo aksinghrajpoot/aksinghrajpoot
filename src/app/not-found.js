@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export const metadata = {
   title: {
@@ -26,12 +27,11 @@ export default function Custom404() {
           </p>
 
           {/* Call-to-Action Button */}
-          <a
-            href="/"
+          <Link href="/"
             className="border-2 border-primary mt-14 inline-block px-8 py-4 text-lg font-semibold text-dark  rounded-full hover:bg-primary hover:bg-opacity-20  transition transform hover:scale-105"
           >
             Return to Homepage
-          </a>
+            </Link>
         </div>
       </div>
     
