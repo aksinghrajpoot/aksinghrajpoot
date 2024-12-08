@@ -5,7 +5,7 @@ export default function ExperienceHome() {
     <>
       <section className="experience " id="experience">
         <div className="container ">
-          <h2 className="numberedHeading ">Experience</h2>
+          <h2 className="numberedHeading"> Experience</h2>
           <div className="grid grid-cols-12 gap-8">
             <div className="col-span-12 mt-6">
               <span className="font-fira  text-sm">2023 - Present </span>
@@ -27,8 +27,11 @@ export default function ExperienceHome() {
                 <span>Incident Management</span>
                 <span>Automation</span>
               </div>
+              
             </div>
-            <div className="col-span-12 mt-6">
+            
+            <div className="col-span-12">
+            <hr className="border-t-2 border-gray-100 border-opacity-10 w-full my-10 mx-auto" />
               <span className="font-fira  text-sm">2022 - 2023 </span>
               <a href="https://atos.net/en/" target="_">
                 <div className={` ${style.experienceTitle}`}>
