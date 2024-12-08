@@ -18,7 +18,7 @@ export default function ExperienceHome() {
                 With a year in incident management and a robust background as a
                 Senior Associate Engineer, I thrive in high-pressure
                 environments, ensuring seamless operations and swift resolutions
-                to technical issues. I've automated reporting processes,
+                to technical issues. I{`'`}ve automated reporting processes,
                 drastically reducing manual efforts and boosting team
                 efficiency. My technical expertise and proactive problem-solving
                 drive continuous improvement and deliver outstanding results.
