@@ -5,6 +5,7 @@ export default function HexagonLogo() {
     <div className="text-lg">
       <svg
         width={50}
+        height={50}
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -16,7 +17,7 @@ export default function HexagonLogo() {
              L50 95 
              L13 75 
              L13 25 
-             Z" 
+             L50 5 Z"  
           className={styles.hexagon}
         />
         {/* Letter "A" */}

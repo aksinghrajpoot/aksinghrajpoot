@@ -44,7 +44,7 @@ function Header() {
 
   return (
     <header>
-      <div className="px-4 md:px-[60px] py-5 border-b-[1px] border-dotted border-[#ffffff20]">
+      <div className="px-4 md:px-[60px] py-3 border-b-[1px] border-dotted border-[#ffffff20]">
         <div className="flex justify-between items-center">
           {/* Logo Section */}
           <div>
