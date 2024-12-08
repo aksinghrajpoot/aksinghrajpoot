@@ -4,6 +4,7 @@ import styles from "./Header.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
+import HexagonLogo from "./SiteLogo";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,14 +49,8 @@ function Header() {
           {/* Logo Section */}
           <div>
             <Link href="/">
-              <Image
-                className="cursor-pointer"
-                width="40"
-                height="40"
-                alt="Logo"
-                src="/static/logo.svg"
-              />
-            </Link>
+                <HexagonLogo/>
+            </Link>     
           </div>
 
           {/* Navigation Section */}
