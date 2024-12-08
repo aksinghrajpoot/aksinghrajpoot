@@ -26,6 +26,8 @@ module.exports = {
         light: "#ccd6f6",
         elight: "#8892B0",
       },
+      screens: { 'mobile': {'max': '639px'}, // Custom mobile breakpoint },
+      }
     },
   },
   plugins: [],
