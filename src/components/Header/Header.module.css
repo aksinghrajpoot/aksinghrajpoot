@@ -10,7 +10,7 @@
 
 @media (max-width: 767px) {
   .nav {
-    @apply absolute z-50 right-4 rounded-md top-20 p-8 space-x-0 space-y-5 bg-cyan-700 h-max transition-all duration-500 ease-in-out;
+    @apply absolute z-50 right-4 rounded-md top-20 p-8 space-x-0 space-y-5 bg-cyan-800 h-max transition-all duration-500 ease-in-out;
   }
   .navItems {
     @apply flex-col space-y-6 space-x-0;

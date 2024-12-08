@@ -15,7 +15,7 @@ section {
 }
 ::selection {
   color: white;
-  background-color: rgba(0, 255, 255, 0.397);
+  background-color: #00ffff65;
 }
 :root {
   --primary: #64ffda;
