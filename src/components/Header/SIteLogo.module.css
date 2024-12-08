@@ -36,7 +36,7 @@
   fill: var(--primary); /* Letter color */
   opacity: 0; /* Initially invisible */
   animation: fadeIn 1s ease-out forwards;
-  animation-delay: 2s; /* Letter fades in after hexagon completes */
+  animation-delay: 1.5s; /* Letter fades in after hexagon completes */
 }
 
 /* Centering container for the logo */
