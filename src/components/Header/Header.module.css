@@ -8,9 +8,9 @@
   @apply border border-primary rounded-md py-1.5 px-5 text-primary;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
   .nav {
-    @apply absolute left-0 top-0 p-8 space-x-0 space-y-5 bg-cyan-700 h-max transition-all duration-500 ease-in-out;
+    @apply absolute z-50 right-4 rounded-md top-20 p-8 space-x-0 space-y-5 bg-cyan-700 h-max transition-all duration-500 ease-in-out;
   }
   .navItems {
     @apply flex-col space-y-6 space-x-0;
@@ -39,11 +39,11 @@
 } 
 
 .bar.isOpen span:nth-child(1) {
-  @apply w-10 rotate-45 top-4;
+  @apply w-8 -rotate-45 top-4;
 }
 .bar.isOpen span:nth-child(2) {
   @apply opacity-0;
 }
 .bar.isOpen span:nth-child(3) {
-  @apply  w-10 mt-4 -rotate-45;
+  @apply  w-8 mt-4 rotate-45;
 }

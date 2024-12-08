@@ -8,28 +8,44 @@ import { useState, useEffect, useRef } from "react";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef();
-  const toggleMenu = () => {
-    setIsOpen((prev) => !prev);
+  const hamburgerRef = useRef();
+
+  // Toggles the menu state
+  const toggleMenu = (event) => {
+    event.stopPropagation(); // Prevent click propagation
+    setIsOpen((prev) => !prev); // Toggle menu open/close state
   };
+
+  // Closes the menu
   const closeMenu = () => {
     setIsOpen(false);
   };
+
+  // Handles clicks outside the menu
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (navRef.current && !navRef.current.contains(event.target)) {
-        closeMenu();
+      // Check if the click target is outside both the nav menu and the hamburger button
+      if (
+        navRef.current &&
+        !navRef.current.contains(event.target) &&
+        hamburgerRef.current &&
+        !hamburgerRef.current.contains(event.target)
+      ) {
+        closeMenu(); // Close the menu if clicking outside
       }
     };
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [navRef]);
+  }, []);
 
   return (
     <header>
-      <div className="px-4 md:px-[60px] py-5">
+      <div className="px-4 md:px-[60px] py-5 border-b-[1px] border-dotted border-[#ffffff20]">
         <div className="flex justify-between items-center">
+          {/* Logo Section */}
           <div>
             <Link href="/">
               <Image
@@ -41,10 +57,13 @@ function Header() {
               />
             </Link>
           </div>
+
+          {/* Navigation Section */}
           <div className="flex items-center">
+            {/* Navigation Menu */}
             <div
               ref={navRef}
-              className={`${styles.nav} ${isOpen ? "block" : "hidden"} md:flex`}
+              className={`${styles.nav} ${isOpen ? "" : "hidden"} md:flex`}
             >
               <ul className={styles.navItems}>
                 <li>
@@ -52,9 +71,8 @@ function Header() {
                     Blog
                   </Link>
                 </li>
-
                 <li>
-                  <Link href="#about-me" onClick={closeMenu}>
+                  <Link href='/about' onClick={closeMenu}>
                     About
                   </Link>
                 </li>
@@ -65,8 +83,11 @@ function Header() {
                 Resume
               </button>
             </div>
+
+            {/* Hamburger Menu */}
             <div className="md:hidden">
               <div
+                ref={hamburgerRef}
                 className={` ${styles.bar} ${isOpen ? styles.isOpen : ""} `}
                 onClick={toggleMenu}
               >
