@@ -5,7 +5,7 @@
 body {
   @apply bg-neon text-elight;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -33,7 +33,6 @@ section {
   font-size: 18px;
   font-family: var(--mono);
   font-weight: 400;
-
 }
 .numberedHeading::after {
   content: "";
@@ -45,6 +44,20 @@ section {
   bottom: 5px;
   left: 15px;
 }
-P{
-  @apply mb-3
+P {
+  @apply mb-3;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px; /* Adjust the width */
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-emerald-600 rounded-lg; /* Rounded corners */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Handle color on hover */
 }
