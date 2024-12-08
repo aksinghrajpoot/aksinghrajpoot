@@ -22,7 +22,7 @@ export default function Aboutcomponent() {
                 technologies like react, angular, nextjs and cloud technologies.
               </p>
               <p>
-                Here are a few technologies I’ve been working with recently:
+                Here are a few technologies I{`'`}ve been working with recently:
               </p>
               <div>
                 <ul className={` ${style.skillsList} grid grid-cols-2 relative font-mono text-sm leading-7`}>
@@ -38,7 +38,7 @@ export default function Aboutcomponent() {
             </div>
             <div className="col-span-12 py-16 md:py-0 md:col-span-5 mx-auto p-0">
               <div
-                className={`wrapper bg-primary rounded-md relative w-[250px] h-[250px] transition-all ease-in-out duration-700 ${style.profileImg}`}
+                className={`wrapper bg-primary rounded-md relative w-[250px] h-[250px] transition-all  ${style.profileImg}`}
               >
                 <Image
                   className="transition-all ease-in-out duration-500 filter grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal rounded-md h-full"
@@ -52,6 +52,7 @@ export default function Aboutcomponent() {
           </div>
         </div>
       </section>
+      
     </>
   );
 }

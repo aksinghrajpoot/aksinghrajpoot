@@ -1,6 +1,6 @@
+import ExperienceHome from "@/components/Experience/Experience";
 import Aboutcomponent from "../components/About/About";
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 
 export const metadata = {
@@ -10,10 +10,10 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      
       <Hero />
       <Aboutcomponent />
-      <Footer />
+      <ExperienceHome/>
+      <Footer/>
     </>
   );
 }

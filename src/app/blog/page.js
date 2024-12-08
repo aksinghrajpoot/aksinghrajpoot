@@ -1,3 +1,6 @@
+import ManSketch from "@/components/Hero/Man"
+
+
 export const metadata={
     title:"Blog"
 }
@@ -5,7 +8,7 @@ export const metadata={
 export default function Blogs(){
     return(
         <>
-        This is the blog page
+         <ManSketch/>
         
         </>
     )

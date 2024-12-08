@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <footer className={styles.svgx}>
+    <footer className={`${styles.svgx} mt-auto`}>
       <div className="container text-elight py-10">
         <FixedIcons/>
         <hr className="h-0.5 w-[200px] md:w-[300px] border-none bg-elight/30 my-5 mx-auto" />

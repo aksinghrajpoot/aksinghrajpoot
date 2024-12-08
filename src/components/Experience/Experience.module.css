@@ -1,0 +1,17 @@
+.experienceTitle:after{
+content: " ↗";
+font-weight: 900
+}
+.experienceTitle{
+      @apply text-lg font-poppins font-medium text-white;
+}
+
+.tags{
+    @apply space-x-2
+}
+.tags>span{
+    @apply py-1 px-3 bg-white bg-opacity-10 backdrop-blur-lg border border-gray-600 rounded-full shadow-lg text-white;
+}
+.tags>span:hover{
+    @apply bg-opacity-20 border-gray-400;
+}

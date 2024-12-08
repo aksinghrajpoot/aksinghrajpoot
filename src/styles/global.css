@@ -4,13 +4,14 @@
 
 body {
   @apply bg-neon text-elight;
+  counter-reset: section;
 }
 html {
   scroll-behavior: smooth;
 }
 
 section {
-  @apply py-20;
+  @apply py-16;
 }
 ::selection {
   color: white;
