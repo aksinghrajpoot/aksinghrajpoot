@@ -18,14 +18,15 @@ const Clock = () => {
     return () => clearInterval(timer); // Cleanup on component unmount
   }, []);
 
-  // Destructure and calculate hand positions
+  // Destructure time values
   const seconds = time.getSeconds();
   const minutes = time.getMinutes();
-  const hours = time.getHours() % 12;
+  const hours = time.getHours();
 
+  // Calculate degrees for each hand
   const secondDegrees = seconds * 6; // 360 degrees / 60 seconds
-  const minuteDegrees = minutes * 6 + seconds * 0.1; // 360 degrees / 60 minutes
-  const hourDegrees = hours * 30 + minutes * 0.5; // 360 degrees / 12 hours
+  const minuteDegrees = minutes * 6 + seconds * 0.1; // 360 degrees / 60 minutes (smooth transition)
+  const hourDegrees = (hours % 12) * 30 + minutes * 0.5 + seconds * (0.5 / 60); // Smooth transition for hours
 
   return (
     <div className={`${styles.clockWrapper} flex items-center justify-center w-full h-full`}>
