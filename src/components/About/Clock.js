@@ -9,11 +9,12 @@ const Clock = () => {
 
    useEffect(() => {
      const timer = setInterval(() => {
-       // Use Date.now() for more consistent time tracking
-       setTime(new Date(Date.now()));
+       const date = new Date();
+       const formattedTime = new Date(date.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
+       setTime(formattedTime); // Update the time in IST every second
      }, 1000);
 
-     return () => clearInterval(timer);
+     return () => clearInterval(timer); // Cleanup on component unmount
    }, []);
 
    const seconds = time.getSeconds();
