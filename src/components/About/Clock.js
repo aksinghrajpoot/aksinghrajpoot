@@ -5,13 +5,9 @@ import Image from 'next/image';
 import styles from './About.module.css';
 
 const Clock = () => {
-  const [time, setTime] = useState(null); // Initially set to null to avoid hydration mismatch
-  const [mounted, setMounted] = useState(false); // Track if the component has mounted
+  const [time, setTime] = useState(new Date()); // Initialize with current time
 
   useEffect(() => {
-    // Set mounted to true once the component is mounted
-    setMounted(true);
-
     // Initialize timer
     const timer = setInterval(() => {
       const date = new Date();
@@ -21,16 +17,6 @@ const Clock = () => {
 
     return () => clearInterval(timer); // Cleanup on component unmount
   }, []);
-
-  // Prevent rendering the clock until it has mounted on the client-side
-  if (!mounted) {
-    return null; // Or you can return a placeholder, e.g., loading spinner
-  }
-
-  // Ensure time is not null before calculating degrees for clock hands
-  if (!time) {
-    return null; // Return null until time is set
-  }
 
   // Destructure time values
   const seconds = time.getSeconds();
