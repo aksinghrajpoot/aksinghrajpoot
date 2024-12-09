@@ -6,8 +6,11 @@ import styles from './About.module.css';
 
 const Clock = () => {
   const [time, setTime] = useState(new Date()); // Initialize with current time
+  const [mounted, setMounted] = useState(false); // Track if component is mounted
 
   useEffect(() => {
+    setMounted(true); // Set to true after the component mounts
+
     // Initialize timer
     const timer = setInterval(() => {
       const date = new Date();
@@ -17,6 +20,11 @@ const Clock = () => {
 
     return () => clearInterval(timer); // Cleanup on component unmount
   }, []);
+
+  if (!mounted) {
+    // Render nothing until the component is mounted to avoid hydration mismatch
+    return null;
+  }
 
   // Destructure time values
   const seconds = time.getSeconds();
@@ -36,10 +44,9 @@ const Clock = () => {
           <Image 
             src="/static/profile.png" // Replace with your image path
             alt="Clock Background"
-            layout="fill"
-            objectFit="cover"
+            fill
             quality={90}
-            className="absolute inset-0"
+            className="absolute inset-0 object-cover"
           />
         </div>
 
