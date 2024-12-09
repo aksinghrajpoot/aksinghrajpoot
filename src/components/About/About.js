@@ -1,5 +1,6 @@
 import Image from "next/image";
 import style from "./About.module.css";
+import Clock from "./Clock";
 
 export default function Aboutcomponent() {
   return (
@@ -36,17 +37,18 @@ export default function Aboutcomponent() {
                 </ul>
               </div>
             </div>
-            <div className="col-span-12 py-16 md:py-0 md:col-span-5 mx-auto p-0">
+            <div className="col-span-12 md:col-span-5 mx-auto">
               <div
-                className={`wrapper bg-primary rounded-md relative w-[250px] h-[250px] transition-all  ${style.profileImg}`}
+                className={`relative rounded-full mx-auto py-8`}
               >
-                <Image
-                  className="transition-all ease-in-out duration-500 filter grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal rounded-md h-full"
+                {/* <Image
+                  className="rounded-md relative  "
                   src="/static/profile.png"
                   width={250}
                   height={250}
                   alt="A K Singh"
-                />
+                /> */}
+                <Clock/>
               </div>
             </div>
           </div>
