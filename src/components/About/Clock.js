@@ -5,48 +5,47 @@ import Image from 'next/image';
 import styles from './About.module.css';
 
 const Clock = () => {
-  const [time, setTime] = useState(new Date()); // Initialize with current time
-  const [mounted, setMounted] = useState(false); // Track if component is mounted
+  const [time, setTime] = useState(new Date()); // Initial value for time
+  const [imageLoaded, setImageLoaded] = useState(false); // State to track if the image is loaded
 
   useEffect(() => {
-    setMounted(true); // Set to true after the component mounts
-
-    // Initialize timer
     const timer = setInterval(() => {
       const date = new Date();
       const formattedTime = new Date(date.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
-      setTime(formattedTime); // Update the time in IST every second
+      setTime(formattedTime);
     }, 1000);
 
-    return () => clearInterval(timer); // Cleanup on component unmount
+    return () => clearInterval(timer);
   }, []);
 
-  if (!mounted) {
-    // Render nothing until the component is mounted to avoid hydration mismatch
-    return null;
-  }
+  // Convert time to angles for clock hands
+  const getClockHandAngles = (time) => {
+    const seconds = time.getSeconds();
+    const minutes = time.getMinutes();
+    const hours = time.getHours();
 
-  // Destructure time values
-  const seconds = time.getSeconds();
-  const minutes = time.getMinutes();
-  const hours = time.getHours();
+    const secondDegrees = seconds * 6;
+    const minuteDegrees = minutes * 6 + seconds * 0.1;
+    const hourDegrees = (hours % 12) * 30 + minutes * 0.5 + seconds * (0.5 / 60);
 
-  // Calculate degrees for each hand
-  const secondDegrees = seconds * 6; // 360 degrees / 60 seconds
-  const minuteDegrees = minutes * 6 + seconds * 0.1; // 360 degrees / 60 minutes (smooth transition)
-  const hourDegrees = (hours % 12) * 30 + minutes * 0.5 + seconds * (0.5 / 60); // Smooth transition for hours
+    return { secondDegrees, minuteDegrees, hourDegrees };
+  };
+
+  const { secondDegrees, minuteDegrees, hourDegrees } = getClockHandAngles(time);
 
   return (
     <div className={`${styles.clockWrapper} flex items-center justify-center w-full h-full`}>
-      <div className={`${styles.clockContainer} relative w-80 h-80 rounded-full`}>
+      <div className={`${styles.clockContainer} relative w-80 h-80 rounded-full`} style={{ minWidth: '320px', minHeight: '320px' }}>
+        
         {/* Background Image Inside Clock Face */}
         <div className={`${styles.clockFaceBackground} absolute inset-4 rounded-full overflow-hidden z-0`}>
           <Image 
-            src="/static/profile.png" // Replace with your image path
+            src="/static/profile.png"
             alt="Clock Background"
             fill
             quality={90}
             className="absolute inset-0 object-cover"
+            onLoad={() => setImageLoaded(true)} // Set imageLoaded to true when the image is fully loaded
           />
         </div>
 
@@ -103,6 +102,19 @@ const Clock = () => {
             }}
           />
         </div>
+
+        {/* Show the image only if it's loaded */}
+        {imageLoaded && (
+          <div className={`${styles.clockFaceBackground} absolute inset-4 rounded-full overflow-hidden z-0`}>
+            <Image 
+              src="/static/profile.png"
+              alt="Clock Background"
+              fill
+              quality={90}
+              className="absolute inset-0 object-cover"
+            />
+          </div>
+        )}
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ module.exports = {
       center: true,
       padding: {
         DEFAULT: "1rem",
-        lg:"10rem",
+        lg:"8rem",
         md:"5rem",
       },
     },
@@ -25,6 +25,9 @@ module.exports = {
         neon: "#0A192F",
         light: "#ccd6f6",
         elight: "#8892B0",
+      },
+      screens: {
+        lg:"1140", // Custom breakpoint between md and lg
       },
     },
   },

@@ -26,7 +26,9 @@ export default function Aboutcomponent() {
                 Here are a few technologies I{`'`}ve been working with recently:
               </p>
               <div>
-                <ul className={` ${style.skillsList} grid grid-cols-2 relative font-mono text-sm leading-7`}>
+                <ul
+                  className={` ${style.skillsList} grid grid-cols-2 relative font-mono text-sm leading-7`}
+                >
                   <li>Javascript</li>
                   <li>React</li>
                   <li>Node.js</li>
@@ -38,25 +40,13 @@ export default function Aboutcomponent() {
               </div>
             </div>
             <div className="col-span-12 md:col-span-5 mx-auto">
-              <div
-                className={`relative rounded-full mx-auto py-8`}
-              >
-                {/* <Image
-                  className="rounded-md relative  "
-                  src="/static/profile.png"
-                  width={250}
-                  height={250}
-                  alt="A K Singh"
-                /> */}
-                <Clock/>
+              <div className={`relative rounded-full mx-auto pt-8 md:pt-3 `}>
+                <Clock />
               </div>
             </div>
           </div>
         </div>
       </section>
-      
     </>
   );
 }
-
-
