@@ -5,23 +5,24 @@ import Image from 'next/image';
 import styles from './About.module.css';
 
 const Clock = () => {
-  const [time, setTime] = useState(new Date());
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-  const seconds = time.getSeconds();
-  const minutes = time.getMinutes();
-  const hours = time.getHours() % 12;
-
-  const secondDegrees = seconds * 6;
-  const minuteDegrees = minutes * 6 + seconds * 0.1;
-  const hourDegrees = hours * 30 + minutes * 0.5;
+    const [time, setTime] = useState(new Date());
+ 
+    useEffect(() => {
+      const timer = setInterval(() => {
+        // Use Date.now() for more consistent time tracking
+        setTime(new Date(Date.now()));
+      }, 1000);
+ 
+      return () => clearInterval(timer);
+    }, []);
+ 
+    const seconds = time.getSeconds();
+    const minutes = time.getMinutes();
+    const hours = time.getHours() % 12;
+ 
+    const secondDegrees = seconds * 6;
+    const minuteDegrees = minutes * 6 + seconds * 0.1;
+    const hourDegrees = hours * 30 + minutes * 0.5;
 
   return (
     <div className={`${styles.clockWrapper} flex items-center justify-center w-full h-full`}>
