@@ -8,6 +8,9 @@ const Clock = () => {
   const [time, setTime] = useState(new Date()); // Initialize with current time
 
   useEffect(() => {
+    // Set the time immediately when the component mounts
+    setTime(new Date());
+
     // Initialize timer
     const timer = setInterval(() => {
       const date = new Date();
