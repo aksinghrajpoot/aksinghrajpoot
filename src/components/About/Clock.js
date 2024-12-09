@@ -5,25 +5,27 @@ import Image from 'next/image';
 import styles from './About.module.css';
 
 const Clock = () => {
-   const [time, setTime] = useState(new Date());
+  const [time, setTime] = useState(new Date()); // Initialize with current time
 
-   useEffect(() => {
-     const timer = setInterval(() => {
-       const date = new Date();
-       const formattedTime = new Date(date.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
-       setTime(formattedTime); // Update the time in IST every second
-     }, 1000);
+  useEffect(() => {
+    // Initialize timer
+    const timer = setInterval(() => {
+      const date = new Date();
+      const formattedTime = new Date(date.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
+      setTime(formattedTime); // Update the time in IST every second
+    }, 1000);
 
-     return () => clearInterval(timer); // Cleanup on component unmount
-   }, []);
+    return () => clearInterval(timer); // Cleanup on component unmount
+  }, []);
 
-   const seconds = time.getSeconds();
-   const minutes = time.getMinutes();
-   const hours = time.getHours() % 12;
+  // Destructure and calculate hand positions
+  const seconds = time.getSeconds();
+  const minutes = time.getMinutes();
+  const hours = time.getHours() % 12;
 
-   const secondDegrees = seconds * 6;
-   const minuteDegrees = minutes * 6 + seconds * 0.1;
-   const hourDegrees = hours * 30 + minutes * 0.5;
+  const secondDegrees = seconds * 6; // 360 degrees / 60 seconds
+  const minuteDegrees = minutes * 6 + seconds * 0.1; // 360 degrees / 60 minutes
+  const hourDegrees = hours * 30 + minutes * 0.5; // 360 degrees / 12 hours
 
   return (
     <div className={`${styles.clockWrapper} flex items-center justify-center w-full h-full`}>
