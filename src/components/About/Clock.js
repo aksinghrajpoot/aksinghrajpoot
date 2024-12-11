@@ -15,7 +15,8 @@ const Clock = () => {
 
     const timer = setInterval(() => {
       const date = new Date();
-      const formattedTime = new Date(date.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
+      // Use the browser's local timezone
+      const formattedTime = new Date(date.toLocaleString());
       setTime(formattedTime);
     }, 1000);
 
