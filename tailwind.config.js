@@ -26,9 +26,6 @@ module.exports = {
         light: "#ccd6f6",
         elight: "#8892B0",
       },
-      screens: {
-        lg:"1140", // Custom breakpoint between md and lg
-      },
     },
   },
   plugins: [],

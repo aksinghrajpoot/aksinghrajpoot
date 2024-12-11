@@ -49,8 +49,10 @@ const Clock = () => {
           <Image 
             src="/static/profile.png"
             alt="Clock Background"
-            fill
+            fill // Use fill directly
             quality={90}
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
             className="absolute inset-0 object-cover"
           />
         </div>
