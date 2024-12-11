@@ -5,10 +5,13 @@ import Image from 'next/image';
 import styles from './About.module.css';
 
 const Clock = () => {
-  const [time, setTime] = useState(new Date()); // Initial value for time
-  const [imageLoaded, setImageLoaded] = useState(false); // State to track if the image is loaded
+  const [time, setTime] = useState(new Date(0)); // Initialize to 0:0:0
 
   useEffect(() => {
+    // Set the initial time only on the client
+    const initialTime = new Date();
+    setTime(initialTime);
+
     const timer = setInterval(() => {
       const date = new Date();
       const formattedTime = new Date(date.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
@@ -18,20 +21,13 @@ const Clock = () => {
     return () => clearInterval(timer);
   }, []);
 
-  // Convert time to angles for clock hands
-  const getClockHandAngles = (time) => {
-    const seconds = time.getSeconds();
-    const minutes = time.getMinutes();
-    const hours = time.getHours();
+  const seconds = time.getSeconds();
+  const minutes = time.getMinutes();
+  const hours = time.getHours();
 
-    const secondDegrees = seconds * 6;
-    const minuteDegrees = minutes * 6 + seconds * 0.1;
-    const hourDegrees = (hours % 12) * 30 + minutes * 0.5 + seconds * (0.5 / 60);
-
-    return { secondDegrees, minuteDegrees, hourDegrees };
-  };
-
-  const { secondDegrees, minuteDegrees, hourDegrees } = getClockHandAngles(time);
+  const secondDegrees = seconds * 6;
+  const minuteDegrees = minutes * 6 + seconds * 0.1;
+  const hourDegrees = (hours % 12) * 30 + minutes * 0.5 + seconds * (0.5 / 60);
 
   return (
     <div className={`${styles.clockWrapper} flex items-center justify-center w-full h-full`}>
@@ -45,7 +41,6 @@ const Clock = () => {
             fill
             quality={90}
             className="absolute inset-0 object-cover"
-            onLoad={() => setImageLoaded(true)} // Set imageLoaded to true when the image is fully loaded
           />
         </div>
 
@@ -102,19 +97,6 @@ const Clock = () => {
             }}
           />
         </div>
-
-        {/* Show the image only if it's loaded */}
-        {imageLoaded && (
-          <div className={`${styles.clockFaceBackground} absolute inset-4 rounded-full overflow-hidden z-0`}>
-            <Image 
-              src="/static/profile.png"
-              alt="Clock Background"
-              fill
-              quality={90}
-              className="absolute inset-0 object-cover"
-            />
-          </div>
-        )}
       </div>
     </div>
   );
