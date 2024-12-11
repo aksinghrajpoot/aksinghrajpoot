@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
 import styles from './About.module.css';
 
 const Clock = () => {
@@ -47,17 +46,14 @@ const Clock = () => {
         style={{ minWidth: '320px', minHeight: '320px' }}
       >
         {/* Background Image Inside Clock Face */}
-        <div className={`${styles.clockFaceBackground} absolute inset-4 rounded-full overflow-hidden z-0`}>
-          <Image 
-            src="/static/profile.png"
-            alt="Clock Background"
-            fill
-            quality={90}
-            priority
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
-            className="absolute inset-0 object-cover"
-          />
-        </div>
+        <div 
+          className={`${styles.clockFaceBackground} absolute inset-4 rounded-full overflow-hidden z-0`}
+          style={{
+            backgroundImage: 'url("/static/profile.png")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
 
         {/* Clock Face Overlay */}
         <div className={`${styles.clockFace} absolute inset-0 rounded-full flex items-center justify-center z-10`}>
