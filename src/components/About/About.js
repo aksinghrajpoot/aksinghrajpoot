@@ -1,4 +1,3 @@
-import Image from "next/image";
 import style from "./About.module.css";
 import Clock from "./Clock";
 

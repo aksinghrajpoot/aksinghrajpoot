@@ -5,33 +5,33 @@ import Image from 'next/image';
 import styles from './About.module.css';
 
 const Clock = () => {
-  const [time, setTime] = useState(new Date(0)); // Initialize to 0:0:0
-  const [isInitial, setIsInitial] = useState(true); // Track if it's the initial render
+  const [time, setTime] = useState(new Date(0, 0, 0, 0, 0, 0)); // Default to 0:0:0
+  const [isInitial, setIsInitial] = useState(true);
 
   useEffect(() => {
-    // Set the initial time only on the client
-    const initialTime = new Date();
-    setTime(initialTime);
+    // Ensure this only runs on client-side
+    if (typeof window !== 'undefined') {
+      const actualTime = new Date();
+      setTime(actualTime);
 
-    const timer = setInterval(() => {
-      const date = new Date();
-      // Use the browser's local timezone
-      const formattedTime = new Date(date.toLocaleString());
-      setTime(formattedTime);
-    }, 1000);
+      const timer = setInterval(() => {
+        const date = new Date();
+        setTime(date);
+      }, 1000);
 
-    return () => clearInterval(timer);
+      // Set up initial animation timer
+      const animationTimer = setTimeout(() => {
+        setIsInitial(false);
+      }, 1000);
+
+      return () => {
+        clearInterval(timer);
+        clearTimeout(animationTimer);
+      };
+    }
   }, []);
 
-  useEffect(() => {
-    // Set isInitial to false after the first update
-    const timer = setTimeout(() => {
-      setIsInitial(false);
-    }, 1000); // Wait for 1 second before changing the state
-
-    return () => clearTimeout(timer);
-  }, []);
-
+  // Calculate degrees for initial 0:0:0 time
   const seconds = time.getSeconds();
   const minutes = time.getMinutes();
   const hours = time.getHours();
@@ -42,14 +42,16 @@ const Clock = () => {
 
   return (
     <div className={`${styles.clockWrapper} flex items-center justify-center w-full h-full`}>
-      <div className={`${styles.clockContainer} relative w-80 h-80 rounded-full`} style={{ minWidth: '320px', minHeight: '320px' }}>
-        
+      <div 
+        className={`${styles.clockContainer} relative w-80 h-80 rounded-full`} 
+        style={{ minWidth: '320px', minHeight: '320px' }}
+      >
         {/* Background Image Inside Clock Face */}
         <div className={`${styles.clockFaceBackground} absolute inset-4 rounded-full overflow-hidden z-0`}>
           <Image 
             src="/static/profile.png"
             alt="Clock Background"
-            fill // Use fill directly
+            fill
             quality={90}
             priority
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
@@ -60,7 +62,7 @@ const Clock = () => {
         {/* Clock Face Overlay */}
         <div className={`${styles.clockFace} absolute inset-0 rounded-full flex items-center justify-center z-10`}>
           {/* Hour markers */}
-          {[...Array(12)].map((_, index) => (
+          {Array.from({ length: 12 }, (_, index) => (
             <div
               key={index}
               className={`${styles.hourMarker} absolute w-1 h-3 bg-slate-300 origin-bottom`}
