@@ -6,6 +6,7 @@ import styles from './About.module.css';
 
 const Clock = () => {
   const [time, setTime] = useState(new Date(0)); // Initialize to 0:0:0
+  const [isInitial, setIsInitial] = useState(true); // Track if it's the initial render
 
   useEffect(() => {
     // Set the initial time only on the client
@@ -19,6 +20,15 @@ const Clock = () => {
     }, 1000);
 
     return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    // Set isInitial to false after the first update
+    const timer = setTimeout(() => {
+      setIsInitial(false);
+    }, 1000); // Wait for 1 second before changing the state
+
+    return () => clearTimeout(timer);
   }, []);
 
   const seconds = time.getSeconds();
@@ -59,9 +69,9 @@ const Clock = () => {
             />
           ))}
 
-          {/* Clock hands */}
+          {/* Clock hands with conditional animation */}
           <div
-            className={`${styles.hourHand} absolute w-2 bg-slate-200 origin-bottom`}
+            className={`${styles.hourHand} ${isInitial ? styles.rotate : ''} absolute w-2 bg-slate-200 origin-bottom`}
             style={{
               height: '80px',
               transform: `rotate(${hourDegrees}deg)`,
@@ -70,7 +80,7 @@ const Clock = () => {
             }}
           />
           <div
-            className={`${styles.minuteHand} absolute w-1.5 bg-slate-300 origin-bottom`}
+            className={`${styles.minuteHand} ${isInitial ? styles.rotate : ''} absolute w-1.5 bg-slate-300 origin-bottom`}
             style={{
               height: '100px',
               transform: `rotate(${minuteDegrees}deg)`,
@@ -79,7 +89,7 @@ const Clock = () => {
             }}
           />
           <div
-            className={`${styles.secondHand} absolute w-0.5 bg-teal-400 origin-bottom`}
+            className={`${styles.secondHand} ${isInitial ? styles.rotate : ''} absolute w-0.5 bg-teal-400 origin-bottom`}
             style={{
               height: '110px',
               transform: `rotate(${secondDegrees}deg)`,
