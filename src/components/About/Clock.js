@@ -49,7 +49,7 @@ const Clock = () => {
         <div 
           className={`${styles.clockFaceBackground} absolute inset-4 rounded-full overflow-hidden z-0`}
           style={{
-            backgroundImage: 'url("/static/profile.png")',
+            backgroundImage: 'url("/static/profile.webp")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}

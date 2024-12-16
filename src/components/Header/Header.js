@@ -48,7 +48,7 @@ function Header() {
         <div className="flex justify-between items-center">
           {/* Logo Section */}
           <div>
-            <Link href="/">
+            <Link href="/" alt='site-logo' title="Website Logo">
                 <HexagonLogo/>
             </Link>     
           </div>

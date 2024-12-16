@@ -8,7 +8,7 @@ export default function robots() {
         },
         {
           userAgent: ['Applebot', 'Bingbot'],
-          disallow: ['/'],
+          disallow: ['/private'],
         },
       ],
     }
