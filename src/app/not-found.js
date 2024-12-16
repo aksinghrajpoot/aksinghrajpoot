@@ -9,10 +9,10 @@ export const metadata = {
 export default function Custom404() {
   return (
     <>
-       <div className="flex items-center justify-center min-h-screen bg-gradient-to-r  text-light animate-fadeIn">
+       <div className="flex items-center justify-center  bg-gradient-to-r  text-light animate-fadeIn">
         <div className="text-center p-6 space-y-4">
           {/* Animated 404 Text */}
-          <h1 className="-mt-20 md:mt-0 text-7xl lg:text-8xl font-bold text-primary animate-bounce text-shadow-glow">
+          <h1 className="mt-36 text-7xl lg:text-8xl font-bold text-primary animate-bounce text-shadow-glow">
             404
           </h1>
 
