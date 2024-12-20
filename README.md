@@ -5,7 +5,7 @@
 <p align="center">
   <samp>
     Hi, I'm A K! 👋 <br>
-    🔥 20 Year's Old Software Developer and researcher at XNetKing  <br>
+    🔥 24 Year's Old Software Developer and researcher at XNetKing  <br>
     :sparkles: Favorite Tech: JavaScript, React, Typescript, Python ... <br>
     :notebook: I’m currently learning React and Djnago... 😭  <br>
     :email:	imaksinghrajpoot@gmail.com <br>
