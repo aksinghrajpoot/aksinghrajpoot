@@ -1,7 +1,7 @@
 # Ensure text files have consistent line endings
 * text=auto
 
-# Specific rules for certain file types
+# Specific rules for certain file types //
 *.js text
 *.css text
 *.html text
