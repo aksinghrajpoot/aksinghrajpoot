@@ -71,6 +71,11 @@ function Header() {
                     About
                   </Link>
                 </li>
+                <li>
+                  <Link href='/resources' onClick={closeMenu}>
+                    Resources
+                  </Link>
+                </li>
                 <li>Experience</li>
                 <li>Work</li>
               </ul>
