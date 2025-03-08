@@ -48,9 +48,9 @@ function Header() {
         <div className="flex justify-between items-center">
           {/* Logo Section */}
           <div>
-            <Link href="/" alt='site-logo' title="Website Logo">
-                <HexagonLogo/>
-            </Link>     
+            <Link href="/" alt="site-logo" title="Website Logo">
+              <HexagonLogo />
+            </Link>
           </div>
 
           {/* Navigation Section */}
@@ -67,20 +67,30 @@ function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link href='/about' onClick={closeMenu}>
+                  <Link href="/about" onClick={closeMenu}>
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href='/resources' onClick={closeMenu}>
+                  <Link href="/resources" onClick={closeMenu}>
                     Resources
                   </Link>
                 </li>
-                <li>Experience</li>
+                <li>
+                <Link href="/experience" onClick={closeMenu}>
+                    Experience
+                  </Link>
+                  </li>
                 <li>Work</li>
               </ul>
+
               <button className={` ${styles.navCta}`} onClick={closeMenu}>
-                Resume
+                <a
+                  href="https://drive.google.com/file/d/1t2gOsBEWutcJXB6kzygufHFFn4gp-Ob5/view?usp=sharing"
+                  target="_"
+                >
+                  Resume
+                </a>
               </button>
             </div>
 

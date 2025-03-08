@@ -1,30 +1,51 @@
-import styles from "./Tools.module.css"
+import styles from "./Tools.module.css";
 
 export const metadata = {
-  title: 'Dev Resources',
-}
+  title: "Dev Resources",
+};
+
+const resources = [
+  {
+    category: "AI Chatbot Agents",
+    links: [
+      { name: "Chat GPT", url: "https://chatgpt.com/" },
+      { name: "DeepSeek AI", url: "https://chat.deepseek.com/" },
+      { name: "Morphic SH", url: "https://www.morphic.sh/" },
+      { name: "Chatbot Arena", url: "https://lmarena.ai/" },
+      { name: "Fragments E2B", url: "https://fragments.e2b.dev/" },
+      { name: "Perplexity", url: "https://www.perplexity.ai/" },
+    ],
+  },
+  {
+    category: "Resume Builder",
+    links: [{ name: "Resume Dive", url: "https://www.resumedive.com/" }],
+  },
+  {
+    category: "Portfolio Inspiration",
+    links: [{ name: "Aabraham James", url: "https://seera.framer.website/" }],
+  },
+];
 
 export default function Resources() {
   return (
     <>
       <section className="tools">
         <div className="container">
-          <h1 className="text-4xl font-bold text-white">Dev Resources</h1>
-          <hr className="border-t-2 border-white w-[70px] mt-3" />
+          <h1 className="text-4xl font-bold text-primary">Dev Resources</h1>
+          <hr className="border-t-2 border-primary w-[70px] mt-3" />
           <div className="main">
-            <h2 className={`${styles.tools_title}`}>AI Chatbot Agents</h2> 
-            <ul className={`${styles.tools_content} list-decimal list-inside`}>
-                <li><a href="https://chatgpt.com/" target="_">Chat GPT</a></li>
-                <li><a href="https://chat.deepseek.com/" target="_">DeepSeek AI</a></li>
-                <li><a href="https://www.morphic.sh/" target="_">Morphic SH</a></li>
-                <li><a href="https://lmarena.ai/" target="_">Chatbot Arena</a></li>
-                <li><a href="https://fragments.e2b.dev/" target="_">Fragments E2B</a></li>
-                <li><a href="https://www.perplexity.ai/" target="_">Perplexity</a></li>
-            </ul>
-            <h2 className={`${styles.tools_title}`}>Resume Builder</h2> 
-            <ul className={`${styles.tools_content} list-decimal list-inside`}>
-                <li><a href="https://www.resumedive.com/" target="_">Resume Dive</a></li>
-            </ul>
+            {resources.map((resource, index) => (
+              <div key={index}>
+                <h2 className={`${styles.tools_title}`}>{resource.category}</h2>
+                <ul className={`${styles.tools_content} ${resource.category === "Resume Builder" ? "list-decimal list-inside" : ""}`}>
+                  {resource.links.map((link, linkIndex) => (
+                    <li key={linkIndex}>
+                      <a href={link.url} target="_">{link.name}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>

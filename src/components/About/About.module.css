@@ -40,10 +40,10 @@
   }
   
   .clockContainer {
-    background: rgba(15, 30, 55, 0.6); /* Slightly lighter version of #0a192f */
+    background: #10111220; /* Slightly lighter version of #0a192f */
     box-shadow: 
       9px 9px 16px rgba(0, 0, 0, 0.5), 
-      -9px -9px 16px rgba(20, 40, 70, 0.4);
+      -9px -9px 16px #1e233066;
     position: relative;
   }
   

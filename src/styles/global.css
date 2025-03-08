@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-neon text-elight;
+  @apply bg-[#101112] text-elight;
   counter-reset: section;
 }
 html {
@@ -15,10 +15,16 @@ section {
 }
 ::selection {
   color: white;
-  background-color: #00ffff65;
+  background-color: #00E57740;
+  
 }
 :root {
-  --primary: #64ffda;
+  --primary: #00E577;
+  --secondary: #9D65C9;
+  --neon: #fffc57;
+  --accent: #FF6B6B;
+  --light: #E6F1FF;
+  --elight: #9CA3AF;
   --mono: "Fira Mono", monospace;
 }
 .numberedHeading {
@@ -57,7 +63,7 @@ P {
   background: #f1f1f1; /* Track color */
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-emerald-600 rounded-lg; /* Rounded corners */
+  @apply bg-primary rounded-lg; /* Rounded corners */
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555; /* Handle color on hover */
