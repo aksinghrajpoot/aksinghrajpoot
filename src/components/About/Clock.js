@@ -42,7 +42,7 @@ const Clock = () => {
   return (
     <div className={`${styles.clockWrapper} flex items-center justify-center w-full h-full`}>
       <div 
-        className={`${styles.clockContainer} relative w-80 h-80 rounded-full`} 
+        className={`${styles.clockContainer} relative w-50 h-50 rounded-full`} 
         style={{ minWidth: '320px', minHeight: '320px' }}
       >
         {/* Background Image Inside Clock Face */}

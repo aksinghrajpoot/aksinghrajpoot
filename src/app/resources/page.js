@@ -31,7 +31,7 @@ export default function Resources() {
     <>
       <section className="tools">
         <div className="container">
-          <h1 className="text-4xl font-bold text-primary">Dev Resources</h1>
+          <h1 className="text-primary">Dev Resources</h1>
           <hr className="border-t-2 border-primary w-[70px] mt-3" />
           <div className="main">
             {resources.map((resource, index) => (

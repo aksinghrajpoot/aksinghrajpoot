@@ -5,15 +5,17 @@
   @apply text-light flex flex-row space-y-0 space-x-5;
 }
 .navCta {
-  @apply border border-primary rounded-md py-1.5 px-5 text-primary;
+  @apply border border-primary rounded-md py-1.5 px-5 text-primary hover:bg-emerald-700 hover:text-white transition-all duration-150;
 }
 
 @media (max-width: 767px) {
   .nav {
-    @apply absolute z-50 right-4 rounded-md top-20 p-8 space-x-0 space-y-5 bg-emerald-500/20 backdrop-blur-md h-max transition-all duration-500 ease-in-out;
+    @apply absolute z-50 right-4 rounded-md top-20 p-8 space-x-0 space-y-5 backdrop-blur-md h-max transition-all duration-500 ease-in-out;
+    background-color: rgba(var(--primary), 0.3);
+  
   }
   .navItems {
-    @apply flex-col space-y-6 space-x-0;
+    @apply flex-col space-y-6 space-x-0 text-gray-100;
   }
 }
 
@@ -29,21 +31,21 @@
   @apply h-[2px] bg-primary block absolute right-0 transition-all duration-500 ease-in-out;
 }
  .bar span:nth-child(1) {
-  @apply w-10 top-0;
+  @apply w-8 top-0;
 }
 .bar span:nth-child(2) {
-  @apply w-8 mt-2;
+  @apply w-6 mt-2.5;
 }
 .bar span:nth-child(3) {
-  @apply w-6 mt-4;
+  @apply w-8 mt-5;
 } 
 
 .bar.isOpen span:nth-child(1) {
-  @apply w-8 -rotate-45 top-4;
+  @apply w-8 -rotate-45 top-3;
 }
 .bar.isOpen span:nth-child(2) {
   @apply opacity-0;
 }
 .bar.isOpen span:nth-child(3) {
-  @apply  w-8 mt-4 rotate-45;
+  @apply  w-8 mt-3 rotate-45;
 }

@@ -2,33 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-[#101112] text-elight;
-  counter-reset: section;
+::selection {
+  color: white;
+  background-color: #00e57740;
+}
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px; /* Adjust the width */
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-lg; /* Rounded corners */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Handle color on hover */
+}
+:root {
+  --primary: 87, 173, 255;
+  --surface: 15, 19, 28;
+  --secondary: 157, 101, 201;
+  --neon: 255, 252, 87;
+  --accent: 255, 107, 107;
+  --light: 230, 241, 255;
+  --elight: 156, 163, 175;
+}
+
+:is(html, body) {
+  @apply bg-surface font-ui;
 }
 html {
+  @apply font-ui;
   scroll-behavior: smooth;
+}
+body {
+  @apply text-elight;
+  counter-reset: section;
+}
+p {
+  @apply text-[1.1rem] font-display mb-3;
+}
+:is(h1, h2, h3, h4, h5, h6) {
+  @apply font-primary;
 }
 
 section {
   @apply py-16;
 }
-::selection {
-  color: white;
-  background-color: #00E57740;
-  
-}
-:root {
-  --primary: #00E577;
-  --secondary: #9D65C9;
-  --neon: #fffc57;
-  --accent: #FF6B6B;
-  --light: #E6F1FF;
-  --elight: #9CA3AF;
-  --mono: "Fira Mono", monospace;
-}
+
 .numberedHeading {
-  @apply text-3xl text-light font-bold relative w-full;
+  @apply text-3xl text-light relative w-full;
 }
 .numberedHeading::before {
   position: relative;
@@ -36,7 +60,7 @@ section {
   counter-increment: section 1;
   content: "0" counter(section) ".";
   margin-right: 10px;
-  color: var(--primary);
+  color: rgb(var(--primary));
   font-size: 18px;
   font-family: var(--mono);
   font-weight: 400;
@@ -51,20 +75,9 @@ section {
   bottom: 5px;
   left: 15px;
 }
-P {
-  @apply mb-3;
-}
 
-/* Scrollbar styles */
-::-webkit-scrollbar {
-  width: 6px; /* Adjust the width */
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Track color */
-}
-::-webkit-scrollbar-thumb {
-  @apply bg-primary rounded-lg; /* Rounded corners */
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Handle color on hover */
+
+
+.back_one {
+  @apply bg-gradient-to-r from-blue-900 via-indigo-900 to-indigo-500;
 }

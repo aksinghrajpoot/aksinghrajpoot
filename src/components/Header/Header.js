@@ -85,12 +85,9 @@ function Header() {
               </ul>
 
               <button className={` ${styles.navCta}`} onClick={closeMenu}>
-                <a
-                  href="https://drive.google.com/file/d/1t2gOsBEWutcJXB6kzygufHFFn4gp-Ob5/view?usp=sharing"
-                  target="_"
-                >
-                  Resume
-                </a>
+              <Link href="/contact" onClick={closeMenu}>
+                  Hire Me
+                </Link>
               </button>
             </div>
 
