@@ -10,7 +10,7 @@ return(
         <h2 className="text-2xl font-semibold mb-6 numberedHeading">Get in Touch</h2>
         <p className="text-gray-400 mb-6">
           Whether you have a project idea, a job opportunity, or just want to say hi,  
-          feel free to reach out. I'd love to connect!
+          feel free to reach out. I&apos;d love to connect!
         </p>
 
         {/* Contact Form */}

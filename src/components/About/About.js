@@ -9,9 +9,9 @@ export default function Aboutcomponent() {
           <h2 className="numberedHeading">About Me</h2>
 
           <p className="font-poppins mt-6">
-            Hello! I'm <span className="text-primary font-semibold">Ashok</span>, a passionate  
+            Hello! I&apos;m <span className="text-primary font-semibold">Ashok</span>, a passionate  
             <span className="text-primary font-semibold"> Software Developer & UI/UX Enthusiast</span> based in India.  
-            I have a deep interest in **web development, modern UI/UX design, and crafting seamless digital experiences**.  
+            I have a deep interest in web development, modern UI/UX design, and crafting seamless digital experiences.  
             I also enjoy **writing tech blogs and sharing knowledge** with the developer community.
           </p>
 
@@ -22,7 +22,7 @@ export default function Aboutcomponent() {
           </p>
 
           <p className="mt-4">
-            Here are a few technologies I’ve been working with recently:
+            Here are a few technologies I&apos;ve been working with recently:
           </p>
 
           <div>
