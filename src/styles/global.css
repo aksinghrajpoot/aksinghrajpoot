@@ -26,7 +26,7 @@
   --neon: 255, 252, 87;
   --accent: 255, 107, 107;
   --light: 230, 241, 255;
-  --elight: 156, 163, 175;
+  --elight: 186, 189, 193;
 }
 
 :is(html, body) {
@@ -40,11 +40,30 @@ body {
   @apply text-elight;
   counter-reset: section;
 }
-p {
-  @apply text-[1.1rem] font-display mb-3;
-}
+
 :is(h1, h2, h3, h4, h5, h6) {
   @apply font-primary;
+}
+h1 {
+  @apply text-5xl font-bold;
+} /* Main Title */
+h2 {
+  @apply text-4xl font-semibold;
+} /* Section Title */
+h3 {
+  @apply text-3xl font-medium;
+} /* Subsection Title */
+h4 {
+  @apply text-2xl font-medium;
+} /* Smaller Titles */
+h5 {
+  @apply text-xl font-medium;
+} /* Minor Headings */
+h6 {
+  @apply text-lg font-normal;
+} /* Smallest Headings */
+p {
+  @apply text-[1.1rem] font-display mb-3;
 }
 
 section {
@@ -75,8 +94,6 @@ section {
   bottom: 5px;
   left: 15px;
 }
-
-
 
 .back_one {
   @apply bg-gradient-to-r from-blue-900 via-indigo-900 to-indigo-500;

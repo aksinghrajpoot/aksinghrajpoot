@@ -87,7 +87,7 @@
   }
   
   .secondHand {
-    background: var(--primary); /* teal-400 with opacity */
+    background: rgb(var(--primary)); /* teal-400 with opacity */
     border-radius: 10px 10px 0 0;
   }
 

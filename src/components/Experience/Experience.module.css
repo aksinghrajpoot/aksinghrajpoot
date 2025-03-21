@@ -15,3 +15,18 @@ font-weight: 900
 .tags>span:hover{
     @apply bg-opacity-20 border-gray-400;
 }
+
+
+.skillsList li {
+    display: flex;
+    align-items: start;
+}
+.skillsList li:before{
+    content: "▹";
+    left: 10px;
+    margin-top: 6px;
+    padding-right:10px;
+    color: var(--primary);
+    font-size: 1rem;
+    line-height: 12px;
+}
