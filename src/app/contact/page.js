@@ -1,12 +1,13 @@
 export const metadata = {
-    title:'Contact'
+  title: "Contact",
+};
 
-}
-
-export default function Contact(){
-    return(
-        <>
-        <div>This is contact page</div>
-        </>
-    )
+export default function Contact() {
+  return (
+    <>
+      <section>
+        <div className="container">This is contact page</div>
+      </section>
+    </>
+  );
 }

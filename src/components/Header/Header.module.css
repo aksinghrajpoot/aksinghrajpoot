@@ -5,7 +5,7 @@
   @apply text-light flex flex-row space-y-0 space-x-5;
 }
 .navCta {
-  @apply border border-primary rounded-md py-1.5 px-5 text-primary hover:bg-emerald-700 hover:text-white transition-all duration-150;
+  @apply border border-primary rounded-md py-1.5 px-5 text-primary hover:bg-primary hover:text-white transition-all duration-150;
 }
 
 @media (max-width: 767px) {

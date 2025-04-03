@@ -1,5 +1,3 @@
-import ManSketch from "@/components/Hero/Man"
-
 
 export const metadata={
     title:"Blog"
@@ -8,7 +6,14 @@ export const metadata={
 export default function Blogs(){
     return(
         <>
-         <ManSketch/>
+         <section>
+            <div className="container">
+                <span>
+                    An article will be displayed here soon... <br/> Thanks for patience
+                </span>
+
+            </div>
+         </section>
         
         </>
     )

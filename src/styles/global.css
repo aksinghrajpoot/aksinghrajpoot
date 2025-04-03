@@ -70,23 +70,21 @@ section {
   @apply py-16;
 }
 
-.numberedHeading {
-  @apply text-3xl text-light relative w-full;
+.section_title h2{
+  @apply text-light;
 }
-.numberedHeading::before {
+.number{
   position: relative;
-  bottom: 4px;
-  counter-increment: section 1;
-  content: "0" counter(section) ".";
   margin-right: 10px;
   color: rgb(var(--primary));
   font-size: 18px;
-  font-family: var(--mono);
+  font-family: var(--font-play);
   font-weight: 400;
+
 }
-.numberedHeading::after {
+.section_title h2::after {
   content: "";
-  width: 150px;
+  width: 100px;
   height: 1px;
   background-color: #233554;
   position: relative;

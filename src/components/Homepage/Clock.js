@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import styles from './About.module.css';
+import styles from './Homepage.module.css';
 
 const Clock = () => {
   const [time, setTime] = useState(new Date(0, 0, 0, 0, 0, 0)); // Default to 0:0:0
