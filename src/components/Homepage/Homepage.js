@@ -3,80 +3,75 @@ import style from "./Homepage.module.css";
 import { CiLinkedin } from "react-icons/ci";
 import { FiDownload } from "react-icons/fi";
 
-
 import Clock from "./Clock";
 import Typewriter from "./Typewriter";
 
-
 export function Hero() {
-    return (
-      <section className={`${style.hero} p-0`}>
-        <div className="container py-4 lg:py-0 lg:min-h-[calc(100vh-75px)] flex items-center">
-          <div className="grid grid-cols-12">
-            <div className="order-1 lg:order-0 col-span-12 lg:col-span-7 flex flex-col justify-center">
-              <div className="text-primary mb-3 font-secondary text-lg animate-pulse">
-                Hey, I&lsquo;m
-              </div>
-              <h1 className="text-light text-3xl lg:text-5xl font-medium font-primary">
-                A K Singh Rajpoot
-              </h1>
-              <span className="lg:text-lg font-medium mt-2 text-secondary">
-                <Typewriter />
-              </span>
-              <p className="py-3 font-secondary">
-                I&lsquo;m a software engineer & creative developer passionate
-                about building intuitive, accessible, and high-performance
-                applications. Whether it&lsquo;s designing sleek interfaces or
-                developing robust backend systems, I turn ideas into reality with
-                precision & creativity.
-              </p>
-              <div className="flex">
-                <a target="_" href="https://linkedin.com/in/aksinghrajpoot">
-                  <button className="relative inline-flex overflow-hidden rounded-lg p-[1px] focus:outline-none">
-                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
-                    <span
-                      className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
-               bg-slate-900 px-3 backdrop-blur-3xl gap-2 py-2 text-primary"
-                    >
-                      Let&lsquo;s connect <CiLinkedin className="text-xl" />
-                    </span>
-                  </button>
-                </a>
-                <a
-                  className="ms-3"
-                  target="_"
-                  href="https://drive.google.com/file/d/1t2gOsBEWutcJXB6kzygufHFFn4gp-Ob5/view?usp=sharing"
-                >
-                  <button className="relative inline-flex overflow-hidden rounded-lg p-[1px] focus:outline-none">
-                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
-                    <span
-                      className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
-               bg-slate-900 px-3  backdrop-blur-3xl gap-2 py-2 text-secondary"
-                    >
-                      Resume <FiDownload className="h-5" />
-                    </span>
-                  </button>
-                </a>
-              </div>
+  return (
+    <section className={`${style.hero} p-0`}>
+      <div className="container py-4 lg:py-0 lg:min-h-[calc(100vh-75px)] 2xl:min-h-[calc(70vh-75px)] flex items-center">
+        <div className="grid grid-cols-12">
+          <div className="order-1 lg:order-0 col-span-12 lg:col-span-7 flex flex-col justify-center">
+            <div className="text-primary mb-3 font-secondary text-lg animate-pulse">
+              Hey, I&lsquo;m
             </div>
-            <div className="order-0 lg:order-1 col-span-12 lg:col-span-5 flex justify-center items-center">
-              <Clock />
+            <h1 className="text-light text-3xl lg:text-5xl font-medium font-primary">
+              A K Singh Rajpoot
+            </h1>
+            <span className="lg:text-lg font-medium mt-2 text-secondary">
+              <Typewriter />
+            </span>
+            <p className="py-3 font-secondary">
+              I&lsquo;m a software engineer & creative developer passionate
+              about building intuitive, accessible, and high-performance
+              applications. Whether it&lsquo;s designing sleek interfaces or
+              developing robust backend systems, I turn ideas into reality with
+              precision & creativity.
+            </p>
+            <div className="flex">
+              <a target="_" href="https://linkedin.com/in/aksinghrajpoot">
+                <button className="relative inline-flex overflow-hidden rounded-lg p-[1px] focus:outline-none">
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
+                  <span
+                    className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
+               bg-slate-900 px-3 backdrop-blur-3xl gap-2 py-2 text-primary"
+                  >
+                    Let&lsquo;s connect <CiLinkedin className="text-xl" />
+                  </span>
+                </button>
+              </a>
+              <a
+                className="ms-3"
+                target="_"
+                href="https://drive.google.com/file/d/1t2gOsBEWutcJXB6kzygufHFFn4gp-Ob5/view?usp=sharing"
+              >
+                <button className="relative inline-flex overflow-hidden rounded-lg p-[1px] focus:outline-none">
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
+                  <span
+                    className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
+               bg-slate-900 px-3  backdrop-blur-3xl gap-2 py-2 text-secondary"
+                  >
+                    Resume <FiDownload className="h-5" />
+                  </span>
+                </button>
+              </a>
             </div>
           </div>
+          <div className="order-0 lg:order-1 col-span-12 lg:col-span-5 flex justify-center items-center">
+            <Clock />
+          </div>
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
+}
 
 export function Aboutcomponent() {
   return (
     <>
       <section className="about_me" id="about-me">
         <div className="container">
-          <div className="font-semibold mb-6 flex items-center section_title">
-            <span className="number">01. </span>
-            <h2>About Me</h2>
-          </div>
+          <h2 className={`${style.title}`}>About Me</h2>
           <p className="font-poppins mt-6">
             Hello! I&apos;m{" "}
             <span className="text-primary font-semibold">Ashok</span>, a
@@ -124,143 +119,139 @@ export function Aboutcomponent() {
   );
 }
 
-
 export function ExperienceHome() {
-    return (
-      <>
-        <section className="experience " id="experience">
-          <div className="container ">
-            <div className="font-semibold mb-6 flex items-center section_title">
-              <span className="number">02. </span>
-              <h2>Experience</h2>
+  return (
+    <>
+      <section className="experience " id="experience">
+        <div className="container ">
+          <h2 className={`${style.title}`}>Experience</h2>
+          <div className="grid grid-cols-12 gap-8">
+            <div className="col-span-12 mt-6">
+              <span className="font-fira  text-sm">2023 - Present </span>
+              <a href="https://atos.net/en/" target="_">
+                <div className={` ${style.experienceTitle}`}>
+                  Senior Associate Engineer - Atos
+                </div>
+              </a>
+              <p className="">
+                As a Senior Associate Engineer with a year of experience in
+                incident management, I have successfully handled high-pressure
+                situations, ensuring smooth operations and rapid resolution of
+                technical issues.
+              </p>
+              <p className="">Key contributions and achievements:</p>
+              <ul className={` ${style.skillsList} mb-4`}>
+                <li>
+                  Managed and resolved critical incidents, minimizing downtime
+                  and ensuring business continuity.
+                </li>
+                <li>
+                  Automated reporting processes, significantly reducing manual
+                  efforts and improving team efficiency.
+                </li>
+                <li>
+                  Collaborated with cross-functional teams to identify and
+                  implement process improvements.
+                </li>
+                <li>
+                  Applied proactive problem-solving skills to enhance system
+                  reliability and performance.
+                </li>
+              </ul>
+              <div className={`${style.tags}`}>
+                <span>Incident Management</span>
+                <span>Automation</span>
+                <span>Process Optimization</span>
+                <span>Technical Support</span>
+                <span>Problem Solving</span>
+              </div>
             </div>
-            <div className="grid grid-cols-12 gap-8">
-              <div className="col-span-12 mt-6">
-                <span className="font-fira  text-sm">2023 - Present </span>
-                <a href="https://atos.net/en/" target="_">
-                  <div className={` ${style.experienceTitle}`}>
-                    Senior Associate Engineer - Atos
-                  </div>
-                </a>
-                <p className="">
-                  As a Senior Associate Engineer with a year of experience in
-                  incident management, I have successfully handled high-pressure
-                  situations, ensuring smooth operations and rapid resolution of
-                  technical issues.
-                </p>
-                <p className="">Key contributions and achievements:</p>
-                <ul className={` ${style.skillsList} mb-4`}>
-                  <li>
-                    Managed and resolved critical incidents, minimizing downtime
-                    and ensuring business continuity.
-                  </li>
-                  <li>
-                    Automated reporting processes, significantly reducing manual
-                    efforts and improving team efficiency.
-                  </li>
-                  <li>
-                    Collaborated with cross-functional teams to identify and
-                    implement process improvements.
-                  </li>
-                  <li>
-                    Applied proactive problem-solving skills to enhance system
-                    reliability and performance.
-                  </li>
-                </ul>
-                <div className={`${style.tags}`}>
-                  <span>Incident Management</span>
-                  <span>Automation</span>
-                  <span>Process Optimization</span>
-                  <span>Technical Support</span>
-                  <span>Problem Solving</span>
+
+            <div className="col-span-12">
+              <hr className="border-t-2 border-gray-100 border-opacity-10 w-full my-10 mx-auto" />
+              <span className="font-fira  text-sm">2022 - 2023 </span>
+              <a href="https://atos.net/en/" target="_">
+                <div className={` ${style.experienceTitle}`}>
+                  System Engineer - Atos
                 </div>
+              </a>
+              <p className="">
+                As a Trainee/System Engineer at Atos, I was responsible for
+                server status monitoring and gained hands-on experience with
+                Linux fundamentals and cloud computing.
+              </p>
+              <p className="">Key contributions and achievements:</p>
+              <ul className={` ${style.skillsList} mb-4`}>
+                <li>
+                  Monitored and managed server health, uptime, and performance
+                  to ensure system reliability.
+                </li>
+                <li>
+                  Explored Linux system administration, including basic
+                  commands, process management, and troubleshooting.
+                </li>
+                <li>
+                  Gained expertise in cloud computing technologies, working with
+                  Azure and AWS platforms.
+                </li>
+                <li>
+                  Earned multiple Azure and AWS certifications, strengthening my
+                  cloud infrastructure knowledge.
+                </li>
+                <li>
+                  Collaborated with teams to analyze system issues and implement
+                  solutions for improved efficiency.
+                </li>
+              </ul>
+              <div className={`${style.tags}`}>
+                <span>L1 Support</span>
+                <span>Server Monitoring</span>
+                <span>Cloud Computing</span>
+                <span>Linux Administration</span>
+                <span>Azure & AWS</span>
+                <span>System Troubleshooting</span>
               </div>
-  
-              <div className="col-span-12">
-                <hr className="border-t-2 border-gray-100 border-opacity-10 w-full my-10 mx-auto" />
-                <span className="font-fira  text-sm">2022 - 2023 </span>
-                <a href="https://atos.net/en/" target="_">
-                  <div className={` ${style.experienceTitle}`}>
-                    System Engineer - Atos
-                  </div>
-                </a>
-                <p className="">
-                  As a Trainee/System Engineer at Atos, I was responsible for
-                  server status monitoring and gained hands-on experience with
-                  Linux fundamentals and cloud computing.
-                </p>
-                <p className="">Key contributions and achievements:</p>
-                <ul className={` ${style.skillsList} mb-4`}>
-                  <li>
-                    Monitored and managed server health, uptime, and performance
-                    to ensure system reliability.
-                  </li>
-                  <li>
-                    Explored Linux system administration, including basic
-                    commands, process management, and troubleshooting.
-                  </li>
-                  <li>
-                    Gained expertise in cloud computing technologies, working with
-                    Azure and AWS platforms.
-                  </li>
-                  <li>
-                    Earned multiple Azure and AWS certifications, strengthening my
-                    cloud infrastructure knowledge.
-                  </li>
-                  <li>
-                    Collaborated with teams to analyze system issues and implement
-                    solutions for improved efficiency.
-                  </li>
-                </ul>
-                <div className={`${style.tags}`}>
-                  <span>L1 Support</span>
-                  <span>Server Monitoring</span>
-                  <span>Cloud Computing</span>
-                  <span>Linux Administration</span>
-                  <span>Azure & AWS</span>
-                  <span>System Troubleshooting</span>
+            </div>
+            <div className="col-span-12">
+              <hr className="border-t-2 border-gray-100 border-opacity-10 w-full my-10 mx-auto" />
+              <span className="font-fira  text-sm">2019 - 2022 </span>
+              <a href="https://atos.net/en/" target="_">
+                <div className={` ${style.experienceTitle}`}>
+                  Software Development - Freelancing
                 </div>
-              </div>
-              <div className="col-span-12">
-                <hr className="border-t-2 border-gray-100 border-opacity-10 w-full my-10 mx-auto" />
-                <span className="font-fira  text-sm">2019 - 2022 </span>
-                <a href="https://atos.net/en/" target="_">
-                  <div className={` ${style.experienceTitle}`}>
-                    Software Development - Freelancing
-                  </div>
-                </a>
-                <p className="">
-                  As a freelance developer, I have worked with multiple clients on
-                  diverse projects, including:
-                </p>
-                <ul className={` ${style.skillsList}`}>
-                  <li>Custom website design and development</li>
-                  <li>Google Search Engine Optimization (SEO)</li>
-                  <li>UI/UX design for modern web applications</li>
-                  <li>Social media account management for clients</li>
-                  <li>School result management systems</li>
-                  <li>Personal portfolio branding</li>
-                </ul>
-                <p className="mt-3">
-                  I leverage the latest technologies such as Next.js, NoSQL, Git,
-                  Tailwind CSS, and modern UI design methodologies to deliver
-                  high-quality, scalable solutions.
-                </p>
-                <div className={`${style.tags}`}>
-                  <span>Next.Js</span>
-                  <span>Tailwind</span>
-                  <span>NoSQL</span>
-                  <span>Figma</span>
-                  <span>AWS-EC2</span>
-                  <span>Google SEO </span>
-                </div>
+              </a>
+              <p className="">
+                As a freelance developer, I have worked with multiple clients on
+                diverse projects, including:
+              </p>
+              <ul className={` ${style.skillsList}`}>
+                <li>Custom website design and development</li>
+                <li>Google Search Engine Optimization (SEO)</li>
+                <li>UI/UX design for modern web applications</li>
+                <li>Social media account management for clients</li>
+                <li>School result management systems</li>
+                <li>Personal portfolio branding</li>
+              </ul>
+              <p className="mt-3">
+                I leverage the latest technologies such as Next.js, NoSQL, Git,
+                Tailwind CSS, and modern UI design methodologies to deliver
+                high-quality, scalable solutions.
+              </p>
+              <div className={`${style.tags}`}>
+                <span>Next.Js</span>
+                <span>Tailwind</span>
+                <span>NoSQL</span>
+                <span>Figma</span>
+                <span>AWS-EC2</span>
+                <span>Google SEO </span>
               </div>
             </div>
           </div>
-        </section>
-      </>
-    );
-  }
+        </div>
+      </section>
+    </>
+  );
+}
 
 const projects = [
   {
@@ -334,10 +325,7 @@ export function Projects() {
     <>
       <section className="py-12">
         <div className="container">
-          <div className="font-semibold mb-6 flex items-center section_title">
-            <span className="number">03. </span>
-            <h2>Projects</h2>
-          </div>
+          <h2 className={`${style.title}`}>Projects</h2>
           <p className="mb-8">
             A collection of websites and applications I have developed, focusing
             on performance, user experience, and modern technologies.
@@ -370,15 +358,11 @@ export function Contact() {
     <>
       <section className="py-12" id="contact">
         <div className="container">
-          <div className="font-semibold mb-6 flex items-center section_title">
-            <span className="number">04.</span>
-            <h2>Get in Touch</h2>
-          </div>
+          <h2 className={`${style.title}`}>Get in Touch</h2>
           <p className="text-gray-400 mb-6">
             Whether you have a project idea, a job opportunity, or just want to
             say hi, feel free to reach out. I&apos;d love to connect!
           </p>
-
           {/* Contact Form */}
           <form className="max-w-lg">
             <div className="mb-4">

@@ -42,7 +42,7 @@ body {
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
-  @apply font-primary;
+  @apply font-primary mt-2;
 }
 h1 {
   @apply text-5xl font-bold;
@@ -70,29 +70,7 @@ section {
   @apply py-16;
 }
 
-.section_title h2{
-  @apply text-light;
-}
-.number{
-  position: relative;
-  margin-right: 10px;
-  color: rgb(var(--primary));
-  font-size: 18px;
-  font-family: var(--font-play);
-  font-weight: 400;
 
-}
-.section_title h2::after {
-  content: "";
-  width: 100px;
-  height: 1px;
-  background-color: #233554;
-  position: relative;
-  display: inline-block;
-  bottom: 5px;
-  left: 15px;
-}
-
-.back_one {
+.backToTop {
   @apply bg-gradient-to-r from-blue-900 via-indigo-900 to-indigo-500;
 }

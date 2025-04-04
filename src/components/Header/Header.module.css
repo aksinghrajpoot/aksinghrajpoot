@@ -26,6 +26,7 @@
   height: 40px;
   margin-left: 70px;
   top: 10px;
+  cursor: pointer;
 }
 .bar span {
   @apply h-[2px] bg-primary block absolute right-0 transition-all duration-500 ease-in-out;
