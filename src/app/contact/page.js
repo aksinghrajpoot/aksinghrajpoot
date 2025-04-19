@@ -10,7 +10,7 @@ export default function Contact() {
 
       <section className="">
         <div className="container">
-        <h1 className="text-primary">Let's Connect</h1>
+        <h1 className="text-primary">Let&apos;s Connect</h1>
         <hr className="border-t-2 border-primary w-[70px] mt-3" />
           <p className="text-[#8b949e] mb-10">
             Whether you have an opportunity, a project, or just want to say hi — I&apos;d love to hear from you!
