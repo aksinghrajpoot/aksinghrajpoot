@@ -77,18 +77,15 @@ function Header() {
                   </Link>
                 </li>
                 <li>
-                <Link href="/experience" onClick={closeMenu}>
+                  <Link href="/experience" onClick={closeMenu}>
                     Experience
                   </Link>
-                  </li>
-                <li>Work</li>
+                </li>
               </ul>
 
-              <button className={` ${styles.navCta}`} onClick={closeMenu}>
               <Link href="/contact" onClick={closeMenu}>
-                  Hire Me
-                </Link>
-              </button>
+                <button className={` ${styles.navCta}`}> Hire Me</button>
+              </Link>
             </div>
 
             {/* Hamburger Menu */}

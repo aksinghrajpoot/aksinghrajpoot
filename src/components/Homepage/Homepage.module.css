@@ -85,7 +85,7 @@
   @apply flex flex-wrap gap-3;
 }
 .tags > span {
-  @apply select-none block py-1 px-3 bg-white bg-opacity-10 backdrop-blur-lg border border-gray-600 rounded-full shadow-lg text-light text-sm;
+  @apply cursor-pointer select-none block py-1 px-3 bg-white bg-opacity-10 backdrop-blur-lg border border-gray-600 rounded-full shadow-lg text-light text-sm;
 }
 .tags > span:hover {
   @apply bg-opacity-20 border-gray-400;
