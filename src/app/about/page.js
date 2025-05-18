@@ -10,13 +10,13 @@ export default function About() {
     <>
       <section>
         <div className="container min-h-fit">
-          <h1 className="text-primary text-center">About Me</h1>
-          <hr className="border-t-2 border-primary w-[70px] mt-3 mx-auto" />
-          <h5 className="text-center text-light">
+          <h1 className="text-primary">About Me</h1>
+          <hr className="border-t-2 border-primary w-[70px] mt-3" />
+          <h5 className="text-light">
             Know more about my journey, skills, and passion for web development.
           </h5>
           <main>
-            <p className="mt-4 text-center">
+            <p className="mt-4">
               Hello! I&apos;m Ashok Singh, a passionate Front-end Developer,
               UI/UX Enthusiast, and Software Engineer from India. With a strong
               foundation in web development, modern UI/UX design, and digital

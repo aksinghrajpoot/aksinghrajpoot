@@ -12,12 +12,12 @@ export default function Experience() {
     <>
       <section>
         <div className="container">
-          <h1 className="text-primary text-center">Experience</h1>
-          <hr className="border-t-2 border-primary w-[70px] mt-3 mx-auto" />
-          <h5 className="text-center text-light">
+          <h1 className="text-primary">Experience</h1>
+          <hr className="border-t-2 border-primary w-[70px] mt-3 " />
+          <h5 className="text-light">
             My journey through professional roles and freelance projects.
           </h5>
-          <div className="flex justify-center my-4">
+          <div className="flex my-4">
             <a target="_" href="https://drive.google.com/file/d/1I2Z_UIVgi5CIhPl5pNe9FWz5OyQ5Ka2d/view?usp=sharing">
               {" "}
               <button className="relative overflow-hidden rounded-lg p-[1px] focus:outline-none">
