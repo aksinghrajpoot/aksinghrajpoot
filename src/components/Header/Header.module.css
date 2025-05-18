@@ -1,11 +1,11 @@
 .nav {
-  @apply flex-row space-x-6 items-center justify-between;
+  @apply flex-row space-x-6  items-center justify-between;
 }
 .navItems {
   @apply text-light flex flex-row space-y-0 space-x-5;
 }
 .navCta {
-  @apply border border-primary rounded-md py-1.5 px-5 text-primary hover:bg-primary hover:text-white transition-all duration-150;
+  @apply border border-primary rounded-md mt-5 md:mt-0  py-1.5 px-5 text-primary hover:bg-primary hover:text-white transition-all duration-150;
 }
 
 @media (max-width: 767px) {

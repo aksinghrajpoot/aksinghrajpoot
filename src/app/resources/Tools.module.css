@@ -7,7 +7,7 @@
 }
 .tools_content a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  @apply transition-colors duration-200 font-medium text-accent;
+  @apply transition-colors duration-200 font-medium text-blue-400;
 }
 .tools_content a:hover{
   @apply text-neon

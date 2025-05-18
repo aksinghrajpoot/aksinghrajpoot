@@ -62,9 +62,9 @@ function Header() {
             >
               <ul className={styles.navItems}>
                 <li>
-                  <Link href="/blog" onClick={closeMenu}>
+                  <a href="https://blog.aksinghrajpoot.com/" target="_blank" onClick={closeMenu}>
                     Blog
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <Link href="/about" onClick={closeMenu}>
