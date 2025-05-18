@@ -1,5 +1,12 @@
 import { RiExternalLinkLine } from "react-icons/ri";
 import style from "./Experience.module.css";
+
+
+export const metadata = {
+  title: "Experience",
+};
+
+
 export default function Experience() {
   return (
     <>
