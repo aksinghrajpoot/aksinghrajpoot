@@ -126,6 +126,13 @@ const resources = [
       { name: "Material UI", url: "https://mui.com/" },
     ],
   },
+  {
+    category: "Mockup Generator",
+    links: [
+      { name: "Website Mockup Generator", url: "https://websitemockupgenerator.com/" },
+      { name: "TechSini Mockup", url: "https://techsini.com/multi-mockup/index.php" },
+    ],
+  },
 ];
 
 export default function Resources() {
