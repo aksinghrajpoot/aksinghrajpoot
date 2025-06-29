@@ -4,138 +4,21 @@ export const metadata = {
   title: "Dev Resources Hub",
 };
 
-const resources = [
-  {
-    category: "AI Chatbot Agents",
-    links: [
-      { name: "Chat GPT", url: "https://chatgpt.com/" },
-      { name: "DeepSeek AI", url: "https://chat.deepseek.com/" },
-      { name: "Morphic SH", url: "https://www.morphic.sh/" },
-      { name: "Chatbot Arena", url: "https://lmarena.ai/" },
-      { name: "Fragments E2B", url: "https://fragments.e2b.dev/" },
-      { name: "Perplexity", url: "https://www.perplexity.ai/" },
-    ],
-  },
-  {
-    category: "Resume Builder",
-    links: [
-      { name: "Resume Dive", url: "https://resumedive.com/" },
-      { name: "ResuMake", url: "https://resumake.io/" },
-      { name: "Enhancv", url: "https://enhancv.com/" },
-      { name: "Nova Resume", url: "https://novoresume.com/" },
-      { name: "Kickresume", url: "https://www.kickresume.com/" },
-      { name: "Canva", url: "https://www.canva.com/resumes/" },
-    ],
-  },
-  {
-    category: "Portfolio Inspiration",
-    links: [
-      { name: "A K Singh Rajpoot", url: "https://aksinghrajpoot.com/" },
-      { name: "Aabraham James", url: "https://seera.framer.website/" },
-      { name: "Brittany Chiang", url: "https://brittanychiang.com/" },
-      { name: "Ryan Warner", url: "https://ryanwarner.dev/" },
-    ],
-  },
-  {
-    category: "Roadmaps",
-    links: [
-      { name: "Front End", url: "https://roadmap.sh/frontend" },
-      { name: "Back End", url: "https://roadmap.sh/backend" },
-      { name: "JavaScript", url: "https://roadmap.sh/javascript" },
-      { name: "React", url: "https://roadmap.sh/react" },
-      { name: "DevOps", url: "https://roadmap.sh/devops" },
-      { name: "Full Stack", url: "https://roadmap.sh/full-stack" },
-      { name: "System Design", url: "https://roadmap.sh/system-design" },
-    ],
-  },
-  {
-    category: "VS Code Extensions",
-    links: [
-      {
-        name: "Prettier",
-        url: "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode",
-      },
-      {
-        name: "ESLint",
-        url: "https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint",
-      },
-      {
-        name: "Tailwind IntelliSense",
-        url: "https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss",
-      },
-      {
-        name: "Live Server",
-        url: "https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer",
-      },
-      {
-        name: "GitLens",
-        url: "https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens",
-      },
-    ],
-  },
-  {
-    category: "APIs & Mock Services",
-    links: [
-      { name: "RapidAPI", url: "https://rapidapi.com/" },
-      { name: "JSONPlaceholder", url: "https://jsonplaceholder.typicode.com/" },
-      { name: "Reqres.in", url: "https://reqres.in/" },
-      { name: "Mocky.io", url: "https://mocky.io/" },
-      { name: "API Ninjas", url: "https://api-ninjas.com/" },
-    ],
-  },
-  {
-    category: "Code Practice Platforms",
-    links: [
-      { name: "LeetCode", url: "https://leetcode.com/" },
-      { name: "HackerRank", url: "https://www.hackerrank.com/" },
-      { name: "Codewars", url: "https://www.codewars.com/" },
-      { name: "Exercism", url: "https://exercism.org/" },
-      { name: "Frontend Mentor", url: "https://www.frontendmentor.io/" },
-    ],
-  },
-  {
-    category: "Free Hosting / Deployment",
-    links: [
-      { name: "Vercel", url: "https://vercel.com/" },
-      { name: "Netlify", url: "https://netlify.com/" },
-      { name: "Render", url: "https://render.com/" },
-      { name: "GitHub Pages", url: "https://pages.github.com/" },
-      {
-        name: "Firebase Hosting",
-        url: "https://firebase.google.com/products/hosting",
-      },
-    ],
-  },
-  {
-    category: "Learning Platforms",
-    links: [
-      { name: "freeCodeCamp", url: "https://www.freecodecamp.org/" },
-      { name: "MDN Web Docs", url: "https://developer.mozilla.org/" },
-      { name: "W3Schools", url: "https://www.w3schools.com/" },
-      { name: "Frontend Masters", url: "https://frontendmasters.com/" },
-      { name: "Codecademy", url: "https://www.codecademy.com/" },
-    ],
-  },
-  {
-    category: "UI Libraries & Frameworks",
-    links: [
-      { name: "Tailwind CSS", url: "https://tailwindcss.com/" },
-      { name: "Bootstrap", url: "https://getbootstrap.com/" },
-      { name: "ShadCN/UI", url: "https://ui.shadcn.com/" },
-      { name: "Chakra UI", url: "https://chakra-ui.com/" },
-      { name: "Material UI", url: "https://mui.com/" },
-    ],
-  },
-  {
-    category: "Mockup Generator",
-    links: [
-      { name: "Website Mockup Generator", url: "https://websitemockupgenerator.com/" },
-      { name: "TechSini Mockup", url: "https://techsini.com/multi-mockup/index.php" },
-    ],
-  },
-];
+// 🔗 Gist raw URL (public)
+const GIST_RAW_URL =
+  "https://gist.githubusercontent.com/aksinghrajpoot/f2c3301edc9f0dd6ea119364773cfcdb/raw/devresources.json";
 
-export default function Resources() {
+// 🔄 Server-side fetch
+async function fetchResources() {
+  const res = await fetch(GIST_RAW_URL, { cache: "no-store" });
+  if (!res.ok) {
+    throw new Error("Failed to load resources from Gist");
+  }
+  return res.json();
+}
+
+export default async function Resources() {
+  const resources = await fetchResources();
   return (
     <>
       <section className="tools">
@@ -167,13 +50,15 @@ export default function Resources() {
                   key={index}
                   className="bg-gray-800 hover:bg-gray-800/70 p-6 rounded-lg border-[1.5px] border-gray-700 hover:border-primary transition-all duration-300"
                 >
-                  <h2 className={`${styles.tools_title}`}>
-                    {resource.category}
-                  </h2>
-                  <ul className={`${styles.tools_content} `}>
+                  <h2 className={styles.tools_title}>{resource.category}</h2>
+                  <ul className={styles.tools_content}>
                     {resource.links.map((link, linkIndex) => (
                       <li key={linkIndex}>
-                        <a href={link.url} target="_">
+                        <a
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           {link.name}
                         </a>
                       </li>
@@ -234,7 +119,7 @@ export default function Resources() {
                   >
                     <path d="M448 360v24c0 39.8-32.2 72-72 72H128c-17.7 0-32-14.3-32-32s14.3-32 32-32h216c13.3 0 24-10.7 24-24v-8H128c-53 0-96 43-96 96 0 8.8 7.2 16 16 16h368c17.7 0 32-14.3 32-32V360zM96 0C78.3 0 64 14.3 64 32v288c17-10.2 36.8-16 58-16h262c8.5 0 16.7 1.2 24.5 3.3 1.1-5.3 1.5-10.8 1.5-16.3V32c0-17.7-14.3-32-32-32H96z" />
                   </svg>
-                 &nbsp;&nbsp; Learning Resources
+                  &nbsp;&nbsp; Learning Resources
                 </h3>
                 <ul className="space-y-3 text-sm">
                   <li className="flex items-start">
