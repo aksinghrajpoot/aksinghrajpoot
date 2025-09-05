@@ -1,0 +1,44 @@
+.tags {
+  /* flex flex-wrap gap-3 */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem; /* 12px */
+}
+
+.tags > span {
+  /* cursor-pointer */
+  cursor: pointer;
+  /* select-none */
+  user-select: none;
+  /* block */
+  display: block;
+  /* py-1 */
+  padding-top: 0.25rem; /* 4px */
+  padding-bottom: 0.25rem; /* 4px */
+  /* px-3 */
+  padding-left: 0.75rem; /* 12px */
+  padding-right: 0.75rem; /* 12px */
+  /* bg-white bg-opacity-10 */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* backdrop-blur-lg */
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  /* border border-gray-600 */
+  border: 1px solid rgb(75 85 99);
+  /* rounded-full */
+  border-radius: 9999px;
+  /* shadow-lg */
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  /* text-light (assuming a light text color) */
+  color: #e5e7eb;
+  /* text-sm */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.tags > span:hover {
+  /* bg-opacity-20 */
+  background-color: rgba(255, 255, 255, 0.2);
+  /* border-gray-400 */
+  border-color: rgb(156 163 175);
+}

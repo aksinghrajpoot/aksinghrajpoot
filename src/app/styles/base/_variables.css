@@ -1,0 +1,15 @@
+:root {
+  --back: oklch(0.19 0.02 265.99);
+  --fore: oklch(1 0 0);
+  --surface: oklch(1 0 0);
+  --ink: oklch(0.7897 0.0144 257.2);
+  --muted: oklch(0.45 0.02 240);
+  --disabled: oklch(0.7 0.01 240); /* brand colors */
+  --primary: oklch(0.73 0.15 249.52);
+  --primary-light: oklch(0.75 0.12 250);
+  --primary-dark: oklch(0.577 0.16 253);
+  --secondary: oklch(66.3% 0.22554 304.906);
+  --secondary-dark: oklch(60.9% 0.23726 303.789); /* page fonts */
+  --font-primary: "Play", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+}

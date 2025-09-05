@@ -1,0 +1,47 @@
+
+@layer base {
+  ::selection {
+    background: var(--primary-dark);
+    color: white;
+  }
+  body {
+    @apply bg-back text-ink font-secondary;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-primary font-semibold leading-tight text-fore ;
+    margin: 0;
+  }
+  h1 {
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+  }
+  h2 {
+    font-size: clamp(1.875rem, 4vw, 3rem);
+  }
+  h3 {
+    font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  }
+  h4 {
+    font-size: clamp(1.25rem, 3vw, 1.875rem);
+  }
+  h5 {
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  }
+  h6 {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+  }
+  button,
+  ul {
+    @apply text-fore cursor-pointer;
+  }
+  a {
+    @apply text-primary-light transition-colors duration-200 cursor-pointer;
+  }
+  a:hover {
+    @apply text-primary;
+  }
+}

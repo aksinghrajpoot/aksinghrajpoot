@@ -1,0 +1,7 @@
+/* src/styles/base/_components.css */
+
+@layer components {
+  .container {
+    @apply px-4 md:px-[8rem] mx-auto;
+  }
+}

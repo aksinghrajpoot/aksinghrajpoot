@@ -1,0 +1,153 @@
+/* ============================= */
+/* ✅ Live Clock Section          */
+/* ============================= */
+
+.clockWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.clockContainer {
+  background: #10111220; /* Slightly lighter version of #0a192f */
+  box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.5), -9px -9px 16px #1e233066;
+  position: relative;
+}
+
+.clockFaceBackground {
+  mask-image: radial-gradient(circle at center, black 0%, transparent 70%);
+  -webkit-mask-image: radial-gradient(circle at center, black 0%, transparent 70%);
+}
+
+.clockFace {
+  background: rgba(15, 30, 55, 0.3);
+  box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.3),
+              inset -4px -4px 6px rgba(20, 40, 70, 0.2);
+  backdrop-filter: blur(1px);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hourMarker {
+  background: rgba(203, 213, 225, 0.7); /* slate-300 with opacity */
+}
+
+.hourHand {
+  background: rgba(226, 232, 240, 0.9); /* slate-200 with opacity */
+  border-radius: 10px 10px 0 0;
+}
+
+.minuteHand {
+  background: rgba(203, 213, 225, 0.8); /* slate-300 with opacity */
+  border-radius: 10px 10px 0 0;
+}
+
+.secondHand {
+  background: var(--primary); /* teal-400 with opacity */
+  border-radius: 10px 10px 0 0;
+}
+
+.rotate {
+  transition: transform 0.5s ease-in-out; /* Smooth rotation */
+}
+
+
+/* ============================= */
+/* ✅ Skills Section              */
+/* ============================= */
+
+.skillsList li {
+  display: flex;
+  align-items: start;
+}
+
+.skillsList li:before {
+  content: "▹";
+  left: 10px;
+  margin-top: 6px;
+  padding-right: 10px;
+  color: var(--primary);
+  font-size: 1rem;
+  line-height: 12px;
+}
+
+
+/* ============================= */
+/* ✅ Experience Section          */
+/* ============================= */
+
+.experienceTitle:after {
+  content: " ↗";
+  font-weight: 900;
+}
+
+.experienceTitle {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500; /* font-medium */
+  color: #ffffff; /* text-white */
+  margin: 0.5rem 0; /* my-2 */
+}
+
+.tags {
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 0.75rem; /* gap-3 */
+}
+
+.tags > span {
+  cursor: pointer;
+  user-select: none;
+  display: block;
+  padding: 0.25rem 0.75rem; /* py-1 px-3 */
+  background: rgba(255, 255, 255, 0.1); /* bg-white bg-opacity-10 */
+  backdrop-filter: blur(8px); /* backdrop-blur-lg */
+  border: 1px solid #4b5563; /* border-gray-600 */
+  border-radius: 9999px; /* rounded-full */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* shadow-lg */
+  font-size: 0.875rem; /* text-sm */
+  color: var(--light); /* text-light */
+}
+
+.tags > span:hover {
+  background: rgba(255, 255, 255, 0.2); /* bg-opacity-20 */
+  border-color: #9ca3af; /* border-gray-400 */
+}
+
+
+/* ============================= */
+/* ✅ Titles + Numbered Headings */
+/* ============================= */
+.homepageContainer{
+  counter-reset: section;
+}
+
+.title {
+  color: rgb(var(--light));
+}
+
+.title::before {
+  position: relative;
+  bottom: 4px;
+  counter-increment: section 1;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  color: rgb(var(--primary));
+  font-size: 18px;
+  font-family: var(--mono);
+  font-weight: 400;
+}
+
+.numberedHeading::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #233554;
+  position: relative;
+  display: inline-block;
+  bottom: 5px;
+  left: 15px;
+}

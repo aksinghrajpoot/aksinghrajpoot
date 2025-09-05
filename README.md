@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center"> 
+    <img src="https://github.com/aksinghrajpoot/aksinghrajpoot/blob/master/public/static/cover-main.png" alt="A K Singh Rajpoot's Github Profile" />
+</p>
 
-## Getting Started
+<p align="center">
+  <samp>
+    Hi, I'm A K! 👋 <br>
+    🔥 24 Year's Old Software Developer and researcher at XNetKing  <br>
+    :sparkles: Favorite Tech: JavaScript, React, Typescript, Python ... <br>
+    :notebook: I’m currently learning React and Djnago... 😭  <br>
+    :email:	imaksinghrajpoot@gmail.com <br>
+    :art: Portfolio: https://aksinghrajpoot.github.io <br>
+    :briefcase: LinkedIn: https://linkedin.com/in/aksinghrajpoot <br>
+                Twitter: https://twitter.com/aksinghrajpoot?lang=en
+  </samp>
+</p>
 
-First, run the development server:
+![version :25.03.2021](https://img.shields.io/badge/version-25.03.2021-informational) &nbsp;
+![licence](https://img.shields.io/crates/l/rustc-serialize/0.3.24) &nbsp;
+![profile count](https://komarev.com/ghpvc/?username=aksinghrajpoot&color=red)&nbsp;
+[![GitHub aksinghrajpoot](https://img.shields.io/github/followers/aksinghrajpoot?label=follow&style=social)](https://github.com/aksinghrajpoot)&nbsp;
+![build: passing](https://img.shields.io/badge/build-passing-success)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🛠 &nbsp;Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)&nbsp;
+![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp;
+![Java](https://img.shields.io/badge/-Java-05122A?style=flat&logo=Java&logoColor=FFA518)&nbsp;
+![C](https://img.shields.io/badge/-C-05122A?style=flat&logo=C&logoColor=A8B9CC)&nbsp;
+![C++](https://img.shields.io/badge/-C++-05122A?style=flat&logo=C%2B%2B&logoColor=00599C)&nbsp;
+![Django](https://img.shields.io/badge/-Django-05122A?style=flat&logo=django&logoColor=092E20)&nbsp;
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-05122A?style=flat&logo=bootstrap&logoColor=563D7C)\
+![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5)&nbsp;
+![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6)&nbsp;
+![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)&nbsp;
+![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)&nbsp;
+![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC)&nbsp;
+![jUnit](https://img.shields.io/badge/jUnit%20-%23150458.svg?&style=flat&logo=Java&logoColor=white)&nbsp;
+![NumPy](https://img.shields.io/badge/numpy%20-%23013243.svg?&style=flat&logo=numpy&logoColor=white)&nbsp;
+![Pandas](https://img.shields.io/badge/pandas%20-%23150458.svg?&style=flat&logo=pandas&logoColor=white)&nbsp;
+![JMH](https://img.shields.io/badge/JMH%20-%23150458.svg?&style=flat&logo=Java&logoColor=white)&nbsp;
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ <details>
+<summary>📊 Github Stats</summary>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=aksinghrajpoot&show_icons=true&theme=gotham" alt="Ayushi Rawat | Stats" />
 
-## Learn More
+</details>
 
-To learn more about Next.js, take a look at the following resources:
+ ![Visitor Count](https://profile-counter.glitch.me/{aksinghrajpoot}/count.svg)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📫 &nbsp; How to reach me:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<a href="https://www.linkedin.com/in/aksinghrajpoot/"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=flat&logo=linkedin&logoColor=white"/></a> &nbsp;
+<a href="mailto:mytechaksingh@gmail.com"><img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white" /></a> &nbsp;
+<a href="https://instagram.com/imaksinghrajpoot"><img src="https://img.shields.io/badge/-instagram_-E4405F?style=flat&logo=Instagram&logoColor=white"/></a> &nbsp;

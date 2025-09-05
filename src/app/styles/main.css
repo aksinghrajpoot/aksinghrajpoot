@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import './base/_variables.css';
+@import './base/_base.css';
+
+@theme inline {
+  /* core colors */
+  --color-back: var(--back);
+  --color-fore: var(--fore);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-disabled: var(--disabled); /* brand colors */
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-secondary-dark: var(--secondary-dark); /* page fonts */
+  --font-primary: var(--font-primary);
+  --font-secondary: var(--font-secondary);
+}
+
+@import './base/_components.css';
+
+.page-header{
+  padding: 3rem 0;
+}
+.pageDescription{
+  padding-block: 1rem;
+}
