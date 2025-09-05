@@ -1,7 +1,0 @@
-.card{
-    gap: 2rem;
-    padding-block: 2rem;
-}
-.card:not(:last-child) {
-  border-bottom: 2px solid #ffffff30;
-}
